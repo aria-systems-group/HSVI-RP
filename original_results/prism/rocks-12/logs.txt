@@ -1,0 +1,45 @@
+PRISM
+=====
+
+Version: 4.8.1
+Memory limits: cudd=1g, java(heap)=32g
+
+Type:        POMDP
+Modules:     master rock1 rock2 robot
+Variables:   started finish r1qual r1taken r1lastobs r2qual r2taken r2lastobs x y
+Observables: started x y r1taken r1lastobs finish r2taken r2lastobs
+
+1 property:
+(1) Pmax=? [ F "goal" ]
+
+---------------------------------------------------------------------
+
+Model checking: Pmax=? [ F "realgoal" ]
+
+Switching to explicit engine, which supports POMDPs...
+
+Building model...
+
+Computing reachable states... 6553 states
+Reachable states exploration and model construction done in 0.228 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.283 seconds.
+
+Warning: Deadlocks detected and fixed in 52 states
+
+Type:        POMDP
+States:      6553 (1 initial)
+Obs/unobs:   1645/4
+Transitions: 40436
+Choices:     31745
+Max/avg:     7/4.84
+
+Starting probabilistic reachability (max)...
+Starting fixed-resolution grid approximation (max)...
+
+Error: Target for reachability is not observable.
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.

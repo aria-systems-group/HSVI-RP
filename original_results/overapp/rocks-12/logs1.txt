@@ -1,0 +1,76 @@
+Storm-pomdp 1.8.1
+
+Date: Wed Apr  3 08:14:30 2024
+Command line arguments: --prism sketch.templ --prop sketch.props --belief-exploration discretize --resolution 1 -tm --signal-timeout 60 --sound --lpsolver gurobi '--gurobi:inttol' 1e-9 '--topological:minmax' svi
+Current working directory: /opt/storm/build/bin/output/rocks-12
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.092s.
+
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	6553
+Transitions: 	40332
+Choices: 	31745
+Observations: 	1645
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 13 item(s)
+   * init -> 1 item(s)
+   * realgoal -> 143 item(s)
+Choice Labels: 	10 labels
+   * placement -> 1 item(s)
+   * r1sense -> 4310 item(s)
+   * r2sense -> 4310 item(s)
+   * west -> 5616 item(s)
+   * r2sample -> 18 item(s)
+   * north -> 5616 item(s)
+   * finish -> 468 item(s)
+   * south -> 5616 item(s)
+   * east -> 5616 item(s)
+   * r1sample -> 18 item(s)
+-------------------------------------------------------------- 
+Analyzing property 'Pmax=? [F "realgoal"]'
+Exploring the belief MDP... 
+##### POMDP Approximation Statistics ######
+# Input model: 
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	6553
+Transitions: 	40332
+Choices: 	31745
+Observations: 	1710
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 13 item(s)
+   * init -> 1 item(s)
+   * realgoal -> 143 item(s)
+Choice Labels: 	10 labels
+   * placement -> 1 item(s)
+   * r1sense -> 4310 item(s)
+   * r2sense -> 4310 item(s)
+   * west -> 5616 item(s)
+   * r2sample -> 18 item(s)
+   * north -> 5616 item(s)
+   * finish -> 468 item(s)
+   * south -> 5616 item(s)
+   * east -> 5616 item(s)
+   * r1sample -> 18 item(s)
+-------------------------------------------------------------- 
+# Max. Number of states with same observation: 4
+# Total check time: 0.494s
+# Number of refinement steps: 0
+# Number of states in the grid MDP for the over-approximation: 2577
+# Maximal resolution for over-approximation: 1
+# Time spend for building the over-approx grid MDP(s): 0.034s
+# Time spend for checking the over-approx grid MDP(s): 0.001s
+##########################################
+
+Result: ≤ 0.75
+Time for POMDP analysis: 0.495s.
+
+Performance statistics:
+  * peak memory usage: 64MB
+  * CPU time: 0.588s
+  * wallclock time: 0.611s

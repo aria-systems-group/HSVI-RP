@@ -1,0 +1,78 @@
+Storm-pomdp 1.8.1
+
+Date: Wed Apr  3 07:15:37 2024
+Command line arguments: --prism sketch.templ --prop sketch.props --belief-exploration unfold --size-threshold 0 --gap-threshold 0 -tm --signal-timeout 60 --sound --lpsolver gurobi '--gurobi:inttol' 1e-9 '--topological:minmax' svi
+Current working directory: /opt/storm/build/bin/output/crypt-4
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.101s.
+
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	1972
+Transitions: 	4659
+Choices: 	4612
+Observations: 	510
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (correct = 1) -> 48 item(s)
+Choice Labels: 	9 labels
+   * flip -> 3 item(s)
+   * choice1 -> 960 item(s)
+   * choice2 -> 960 item(s)
+   * choice3 -> 960 item(s)
+   * choice4 -> 384 item(s)
+   * guess1 -> 384 item(s)
+   * guess2 -> 384 item(s)
+   * check -> 144 item(s)
+   * guess3 -> 384 item(s)
+-------------------------------------------------------------- 
+Analyzing property 'Pmax=? [F (correct = 1)]'
+Exploring the belief MDP... 
+Heuristically selected an under-approximation MDP size threshold of 23664.
+Finished exploring under-approximation MDP.
+Start analysis...
+##### POMDP Approximation Statistics ######
+# Input model: 
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	1972
+Transitions: 	4659
+Choices: 	4612
+Observations: 	510
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (correct = 1) -> 48 item(s)
+Choice Labels: 	9 labels
+   * flip -> 3 item(s)
+   * choice1 -> 960 item(s)
+   * choice2 -> 960 item(s)
+   * choice3 -> 960 item(s)
+   * choice4 -> 384 item(s)
+   * guess1 -> 384 item(s)
+   * guess2 -> 384 item(s)
+   * check -> 144 item(s)
+   * guess3 -> 384 item(s)
+-------------------------------------------------------------- 
+# Max. Number of states with same observation: 12
+# Pre-computations detected that the belief MDP is finite.
+# Total check time: 0.031s
+# Number of refinement steps: 0
+# Number of states in the belief MDP for the under-approximation: 560
+# Exploration state limit for under-approximation: 23664
+# Time spend for building the under-approx grid MDP(s): 0.005s
+# Time spend for checking the under-approx grid MDP(s): 0.001s
+##########################################
+
+Result: ≥ 0.3333333333
+Time for POMDP analysis: 0.032s.
+
+Performance statistics:
+  * peak memory usage: 63MB
+  * CPU time: 0.105s
+  * wallclock time: 0.146s

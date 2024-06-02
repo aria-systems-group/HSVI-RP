@@ -1,0 +1,79 @@
+PRISM
+=====
+
+Version: 4.7.dev
+Date: Thu May 26 07:28:27 CEST 2022
+Hostname: DESKTOP-12JT6ER
+Memory limits: cudd=1g, java(heap)=16g
+Command line: prism /mnt/d/src/PP/new_storm/artifact/benchmark/uai-prism/refuel-06/sketch.templ /mnt/d/src/PP/new_storm/artifact/benchmark/uai-prism/refuel-06/sketch.props --gridresolution 3 -javamaxmem 16g -maxiters 1000000
+
+Parsing model file "/mnt/d/src/PP/new_storm/artifact/benchmark/uai-prism/refuel-06/sketch.templ"...
+
+Type:        POMDP
+Modules:     master tank alice 
+Variables:   start fuel ax ay 
+Observables: start fuel cangonorth cangosouth cangowest cangoeast amdone hascrash refuelAllowed
+
+Switching to explicit engine, which supports POMDPs...
+
+Parsing properties file "/mnt/d/src/PP/new_storm/artifact/benchmark/uai-prism/refuel-06/sketch.props"...
+
+1 property:
+(1) Pmax=? [ "notbad" U "goal" ]
+
+---------------------------------------------------------------------
+
+Model checking: Pmax=? [ "notbad" U "goal" ]
+
+Building model...
+
+Computing reachable states... 208 states
+Reachable states exploration and model construction done in 0.035 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.048 seconds.
+
+Warning: Deadlocks detected and fixed in 3 states
+
+Type:        POMDP
+States:      208 (1 initial)
+Obs/unobs:   50/49
+Transitions: 1004
+Choices:     574
+Max/avg:     4/2.76
+
+Starting probabilistic reachability (max)...
+Starting fixed-resolution grid approximation (max)...
+target obs=4, remain obs=38
+Grid statistics: resolution=3, points=6208
+Building belief space approximation...
+Solving belief space approximation...
+Belief space value iteration (max) took 468 iterations and 136.26 seconds.
+Outer bound: 0.7222131080009908 (exact floating point)
+
+Building strategy-induced model...
+Strategy-induced model: 36 states (1 initial), 51 transitions, 36 choices, dist max/avg = 1/1.00
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 12 iterations and 0.001 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 48 iterations and 0.005 seconds.
+target=3, yes=16, no=3, maybe=17
+Starting value iteration (min, with Power method)...
+Value iteration (min, with Power method) took 560 iterations, 15680 multiplications and 0.005 seconds.
+Probabilistic reachability took 0.017 seconds.
+Inner bound: 0.6721540525952495 (+/- 6.69334601864446E-6 estimated; rel err 9.958053503956164E-6)
+
+Fixed-resolution grid approximation (max) took 136.499 seconds.
+Result bounds: [0.6721473592492309,0.7222131080009908]
+Probabilistic reachability took 136.502 seconds.
+
+Value in the initial state: 0.6971802336251108
+
+Time for model checking: 136.505 seconds.
+
+Result: 0.6971802336251108 (+/- 0.025032874375879977 estimated; rel err 0.03590588655349157)
+
+---------------------------------------------------------------------
+
+Note: There was 1 warning during computation.

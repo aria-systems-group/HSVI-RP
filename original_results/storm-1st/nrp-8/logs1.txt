@@ -1,0 +1,70 @@
+  Storm-pomdp 1.8.1
+
+Date: Wed Apr  3 07:24:57 2024
+Command line arguments: --prism sketch.templ --prop sketch.props --belief-exploration unfold --size-threshold 0 --resolution 1 --gap-threshold 0 -tm --signal-timeout 60 --sound --lpsolver gurobi '--gurobi:inttol' 1e-9 '--topological:minmax' svi
+Current working directory: /opt/storm/build/bin/output/nrp-8
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.026s.
+
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	125
+Transitions: 	168
+Choices: 	161
+Observations: 	41
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * unfair -> 8 item(s)
+Choice Labels: 	5 labels
+   * req -> 1 item(s)
+   * message -> 36 item(s)
+   * stop -> 36 item(s)
+   * ack -> 36 item(s)
+   * done -> 8 item(s)
+-------------------------------------------------------------- 
+Analyzing property 'Pmax=? [F "unfair"]'
+Exploring the belief MDP... 
+Heuristically selected an under-approximation MDP size threshold of 1000.
+Finished exploring under-approximation MDP.
+Start analysis...
+##### POMDP Approximation Statistics ######
+# Input model: 
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	125
+Transitions: 	168
+Choices: 	161
+Observations: 	41
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * unfair -> 8 item(s)
+Choice Labels: 	5 labels
+   * req -> 1 item(s)
+   * message -> 36 item(s)
+   * stop -> 36 item(s)
+   * ack -> 36 item(s)
+   * done -> 8 item(s)
+-------------------------------------------------------------- 
+# Max. Number of states with same observation: 8
+# Pre-computations detected that the belief MDP is finite.
+# Total check time: 0.002s
+# Number of refinement steps: 0
+# Number of states in the belief MDP for the under-approximation: 50
+# Exploration state limit for under-approximation: 1000
+# Time spend for building the under-approx grid MDP(s): 0.000s
+# Time spend for checking the under-approx grid MDP(s): 0.000s
+##########################################
+
+Result: ≥ 0.125
+Time for POMDP analysis: 0.003s.
+
+Performance statistics:
+  * peak memory usage: 63MB
+  * CPU time: 0.048s
+  * wallclock time: 0.036s

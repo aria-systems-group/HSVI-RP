@@ -1,0 +1,17 @@
+2024-02-07 10:43:48,462 - cli.py - This is Paynt version 0.1.0.
+2024-02-07 10:43:48,463 - sketch.py - loading sketch from /synthesis/paynt/experiments/../models/models/grid-20-5obs-05/sketch.templ ...
+2024-02-07 10:43:48,552 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2024-02-07 10:43:48,552 - prism_parser.py - loading properties from /synthesis/paynt/experiments/../models/models/grid-20-5obs-05/sketch.props ...
+2024-02-07 10:43:48,552 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? [(!"bad") U "goal"] 
+2024-02-07 10:43:48,616 - sketch.py - constructed explicit quotient having 203 states and 785 actions
+2024-02-07 10:43:48,616 - property.py - converting until formula to eventually...
+2024-02-07 10:43:48,616 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2024-02-07 10:43:48,617 - quotient_pomdp.py - Constructed POMDP having 4 observations.
+2024-02-07 10:43:48,619 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1] ...
+2024-02-07 10:43:48,619 - quotient_pomdp.py - Constructed quotient MDP having 203 states and 785 actions.
+2024-02-07 10:43:48,648 - synthesizer_pomdp.py - Storm pomdp option enabled
+2024-02-07 10:43:48,648 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 10mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2024-02-07 10:43:48,648 - storm_pomdp_control.py - starting Storm POMDP analysis
+### 6422121 beliefs in underapproximation MDP ##### 4812406 beliefs queued
+Finished exploring Underapproximation MDP.
+ Start analysis...

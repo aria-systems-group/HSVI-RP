@@ -1,0 +1,40 @@
+PRISM
+=====
+
+Version: 4.8.1
+Memory limits: cudd=1g, java(heap)=32g
+Type:        POMDP
+Modules:     originator malicious_recipient
+Variables:   o N ack r mess last
+Observables: last r mess ack o
+
+
+1 property:
+(1) Pmax=? [ F "unfair" ]
+
+---------------------------------------------------------------------
+
+Model checking: Pmax=? [ F "unfair" ]
+
+Switching to explicit engine, which supports POMDPs...
+
+Building model...
+
+Computing reachable states... 125 states
+Reachable states exploration and model construction done in 0.021 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.039 seconds.
+
+Type:        POMDP
+States:      125 (1 initial)
+Obs/unobs:   41/9
+Transitions: 168
+Choices:     161
+Max/avg:     2/1.29
+
+Starting probabilistic reachability (max)...
+Starting fixed-resolution grid approximation (max)...
+target obs=8, remain obs=41
+Grid statistics: resolution=20, points=3552129
+Building belief space approximation...

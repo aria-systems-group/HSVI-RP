@@ -1,0 +1,66 @@
+PRISM
+=====
+
+Version: 4.8.1
+Memory limits: cudd=1g, java(heap)=32g
+
+Type:        POMDP
+Modules:     master crypt1 crypt2 crypt3 crypt4
+Variables:   m pay coin1 s1 agree1 coin2 s2 agree2 coin3 s3 agree3 coin4 s4 agree4 guess correct
+Observables: coin1 coin4 m s1 s2 s3 s4 guess correct agree1 agree2 agree3 agree4
+
+1 property:
+(1) "maximum": Pmax=? [ F correct=1 ]
+
+---------------------------------------------------------------------
+
+Model checking: "maximum": Pmax=? [ F correct=1 ]
+
+Switching to explicit engine, which supports POMDPs...
+
+Building model...
+
+Computing reachable states... 1972 states
+Reachable states exploration and model construction done in 0.061 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.084 seconds.
+
+Type:        POMDP
+States:      1972 (1 initial)
+Obs/unobs:   510/15
+Transitions: 4659
+Choices:     4612
+Max/avg:     6/2.34
+
+Starting probabilistic reachability (max)...
+Starting fixed-resolution grid approximation (max)...
+target obs=48, remain obs=510
+Grid statistics: resolution=4, points=47236
+Building belief space approximation...
+Solving belief space approximation...
+Belief space value iteration (max) took 9 iterations and 4.956 seconds.
+Outer bound: 0.7916667083333385 (exact floating point)
+
+Building strategy-induced model...
+Strategy-induced model: 98 states (1 initial), 129 transitions, 98 choices, dist max/avg = 1/1.00
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 9 iterations and 0.005 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 11 iterations and 0.003 seconds.
+target=16, yes=16, no=16, maybe=66
+Starting value iteration (min, with Power method)...
+Value iteration (min, with Power method) took 9 iterations, 873 multiplications and 0.004 seconds.
+Probabilistic reachability took 0.015 seconds.
+Inner bound: 0.33333333333333326 (exact floating point)
+
+Fixed-resolution grid approximation (max) took 11.648 seconds.
+Result bounds: [0.3333333333333333,0.7916667083333386]
+Probabilistic reachability took 11.65 seconds.
+
+Value in the initial state: 0.562500020833336
+
+Time for model checking: 11.657 seconds.
+
+Result: 0.562500020833336 (+/- 0.22916668750000263; rel err 0.4074074293552832)

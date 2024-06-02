@@ -1,0 +1,132 @@
+2024-02-06 23:39:47,866 - cli.py - This is Paynt version 0.1.0.
+2024-02-06 23:39:47,866 - sketch.py - loading sketch from /synthesis/paynt/experiments/../models/models/grid-4/sketch.templ ...
+2024-02-06 23:39:47,871 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2024-02-06 23:39:47,871 - prism_parser.py - loading properties from /synthesis/paynt/experiments/../models/models/grid-4/sketch.props ...
+2024-02-06 23:39:47,872 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? [(!"bad") U "goal"] 
+2024-02-06 23:39:47,899 - sketch.py - constructed explicit quotient having 17 states and 59 actions
+2024-02-06 23:39:47,900 - property.py - converting until formula to eventually...
+2024-02-06 23:39:47,900 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2024-02-06 23:39:47,900 - quotient_pomdp.py - Constructed POMDP having 4 observations.
+2024-02-06 23:39:47,900 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1] ...
+2024-02-06 23:39:47,900 - quotient_pomdp.py - Constructed quotient MDP having 17 states and 59 actions.
+2024-02-06 23:39:47,901 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2024-02-06 23:39:47,901 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1] ...
+2024-02-06 23:39:47,902 - quotient_pomdp.py - Constructed quotient MDP having 17 states and 59 actions.
+2024-02-06 23:39:47,902 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.21428571428571427 | Time elapsed = 0.0s | FSC size = 8
+FSC = A([o=1],0)={'south'}
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 0.0 s
+number of holes: 1, family size: 4, super quotient: 17 states / 59 actions
+explored: 100 %
+AR stats: avg MDP size: 17, iterations: 5
+
+optimal: 0.214286
+--------------------
+
+2024-02-06 23:39:47,904 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2024-02-06 23:39:47,904 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 1, 1, 1] ...
+2024-02-06 23:39:47,904 - quotient_pomdp.py - Constructed quotient MDP having 31 states and 228 actions.
+2024-02-06 23:39:47,907 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.40714285714285714 | Time elapsed = 0.0s | FSC size = 10
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'east'}, M([o=1],0)=1, M([o=1],1)=1, M([],0)=0
+
+-----------PAYNT-----------               
+Value = 0.8517760732142856 | Time elapsed = 0.0s | FSC size = 10
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'east'}, M([o=1],0)=1, M([o=1],1)=0, M([],0)=1
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 0.02 s
+number of holes: 5, family size: 128, super quotient: 31 states / 228 actions
+explored: 100 %
+AR stats: avg MDP size: 31, iterations: 37
+
+optimal: 0.851776
+--------------------
+
+2024-02-06 23:39:47,929 - synthesizer_pomdp.py - Synthesizing optimal k=3 controller ...
+2024-02-06 23:39:47,929 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 1, 1, 1] ...
+2024-02-06 23:39:47,929 - quotient_pomdp.py - Constructed quotient MDP having 45 states and 509 actions.
+2024-02-06 23:39:47,946 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.9145167671428569 | Time elapsed = 0.1s | FSC size = 12
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'east'}, A([o=1],2)={'east'}, M([o=1],0)=1, M([o=1],1)=0, M([o=1],2)=1, M([],0)=2
+
+-----------PAYNT-----------               
+Value = 0.9161162857142855 | Time elapsed = 0.1s | FSC size = 12
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'east'}, A([o=1],2)={'east'}, M([o=1],0)=1, M([o=1],1)=2, M([o=1],2)=0, M([],0)=1
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 0.56 s
+number of holes: 7, family size: 5184, super quotient: 45 states / 509 actions
+explored: 100 %
+AR stats: avg MDP size: 45, iterations: 616
+
+optimal: 0.916116
+--------------------
+
+2024-02-06 23:39:48,511 - synthesizer_pomdp.py - Synthesizing optimal k=4 controller ...
+2024-02-06 23:39:48,512 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [4, 1, 1, 1] ...
+2024-02-06 23:39:48,512 - quotient_pomdp.py - Constructed quotient MDP having 59 states and 902 actions.
+2024-02-06 23:39:48,555 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.9265280835714285 | Time elapsed = 3.0s | FSC size = 14
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'east'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, M([o=1],0)=1, M([o=1],1)=0, M([o=1],2)=1, M([o=1],3)=2, M([],0)=3
+
+-----------PAYNT-----------               
+Value = 0.926738857142857 | Time elapsed = 3.0s | FSC size = 14
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'east'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, M([o=1],0)=1, M([o=1],1)=3, M([o=1],2)=1, M([o=1],3)=0, M([],0)=2
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 24.58 s
+number of holes: 9, family size: 262144, super quotient: 59 states / 902 actions
+explored: 100 %
+AR stats: avg MDP size: 59, iterations: 18695
+
+optimal: 0.926739
+--------------------
+
+2024-02-06 23:40:13,133 - synthesizer_pomdp.py - Synthesizing optimal k=5 controller ...
+2024-02-06 23:40:13,133 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [5, 1, 1, 1] ...
+2024-02-06 23:40:13,133 - quotient_pomdp.py - Constructed quotient MDP having 73 states and 1407 actions.
+2024-02-06 23:40:13,234 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.9283036357142855 | Time elapsed = 157.7s | FSC size = 16
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'east'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, A([o=1],4)={'east'}, M([o=1],0)=1, M([o=1],1)=0, M([o=1],2)=1, M([o=1],3)=2, M([o=1],4)=3, M([],0)=4
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 1349.68 s
+number of holes: 11, family size: 16000000, super quotient: 73 states / 1407 actions
+explored: 100 %
+AR stats: avg MDP size: 73, iterations: 721364
+
+optimal: 0.928304
+--------------------
+
+2024-02-07 00:02:42,913 - synthesizer_pomdp.py - Synthesizing optimal k=6 controller ...
+2024-02-07 00:02:42,914 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [6, 1, 1, 1] ...
+2024-02-07 00:02:42,914 - quotient_pomdp.py - Constructed quotient MDP having 87 states and 2024 actions.
+2024-02-07 00:02:43,114 - synthesizer.py - Synthesis initiated.

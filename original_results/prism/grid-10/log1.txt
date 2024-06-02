@@ -1,0 +1,62 @@
+PRISM
+=====
+
+Version: 4.8.1
+Memory limits: cudd=1g, java(heap)=32g
+
+Type:        POMDP
+Modules:     grid
+Variables:   x y o
+Observables: o
+
+1 property:
+(1) Pmax=? [ !"bad" U "goal" ]
+
+---------------------------------------------------------------------
+
+Model checking: Pmax=? [ !"bad" U "goal" ]
+
+Switching to explicit engine, which supports POMDPs...
+
+Building model...
+
+Computing reachable states... 101 states
+Reachable states exploration and model construction done in 0.022 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.039 seconds.
+
+Type:        POMDP
+States:      101 (1 initial)
+Obs/unobs:   4/100
+Transitions: 756
+Choices:     389
+Max/avg:     4/3.85
+
+Starting probabilistic reachability (max)...
+Starting fixed-resolution grid approximation (max)...
+target obs=1, remain obs=3
+Grid statistics: resolution=1, points=97
+Building belief space approximation...
+Solving belief space approximation...
+Belief space value iteration (max) took 49 iterations and 1.219 seconds.
+Outer bound: 0.9999982766342922 (exact floating point)
+
+Building strategy-induced model...
+Strategy-induced model: 98876 states (1 initial), 123556 transitions, 98876 choices, dist max/avg = 1/1.00
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Starting Prob1 (min)...
+target=0, yes=0, no=98876, maybe=0
+Probabilistic reachability took 0.015 seconds.
+Inner bound: 0.0 (exact floating point)
+
+Fixed-resolution grid approximation (max) took 31.251 seconds.
+Result bounds: [0.0,0.9999982766342922]
+Probabilistic reachability took 31.252 seconds.
+
+Value in the initial state: 0.4999991383171461
+
+Time for model checking: 31.255 seconds.
+
+Result: 0.4999991383171461 (+/- 0.4999991383171461; rel err 1.0)

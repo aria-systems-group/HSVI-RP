@@ -1,0 +1,66 @@
+PRISM
+=====
+
+Version: 4.8.1
+Memory limits: cudd=1g, java(heap)=32g
+
+Type:        POMDP
+Modules:     grid
+Variables:   x y o
+Observables: o
+
+1 property:
+(1) Pmax=? [ !"bad" U "goal" ]
+
+---------------------------------------------------------------------
+
+Model checking: Pmax=? [ !"bad" U "goal" ]
+
+Switching to explicit engine, which supports POMDPs...
+
+Building model...
+
+Computing reachable states... 17 states
+Reachable states exploration and model construction done in 0.01 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.031 seconds.
+
+Type:        POMDP
+States:      17 (1 initial)
+Obs/unobs:   4/16
+Transitions: 114
+Choices:     59
+Max/avg:     4/3.47
+
+Starting probabilistic reachability (max)...
+Starting fixed-resolution grid approximation (max)...
+target obs=1, remain obs=3
+Grid statistics: resolution=1, points=15
+Building belief space approximation...
+Solving belief space approximation...
+Belief space value iteration (max) took 20 iterations and 0.025 seconds.
+Outer bound: 0.9999995118213912 (exact floating point)
+
+Building strategy-induced model...
+Strategy-induced model: 15 states (1 initial), 31 transitions, 15 choices, dist max/avg = 1/1.00
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 3 iterations and 0.003 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 7 iterations and 0.001 seconds.
+target=1, yes=1, no=4, maybe=10
+Starting value iteration (min, with Power method)...
+Value iteration (min, with Power method) took 11 iterations, 286 multiplications and 0.003 seconds.
+Probabilistic reachability took 0.012 seconds.
+Inner bound: 0.2142851238562363 (exact floating point)
+
+Fixed-resolution grid approximation (max) took 0.051 seconds.
+Result bounds: [0.21428512385623633,0.9999995118213912]
+Probabilistic reachability took 0.054 seconds.
+
+Value in the initial state: 0.6071423178388138
+
+Time for model checking: 0.057 seconds.
+
+Result: 0.6071423178388138 (+/- 0.39285719398257746; rel err 0.6470594824966138)

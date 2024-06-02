@@ -1,0 +1,67 @@
+Storm-pomdp 1.8.1
+
+Command line arguments: --prism sketch.templ --prop sketch.props --belief-exploration discretize --resolution 6 -tm --signal-timeout 60 --sound --lpsolver gurobi '--gurobi:inttol' 1e-9 '--topological:minmax' svi
+Current working directory: /opt/storm/build/bin/output/grid-4
+
+Time for model input parsing: 0.007s.
+
+Time for model construction: 0.034s.
+
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	17
+Transitions: 	114
+Choices: 	59
+Observations: 	4
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * goal -> 1 item(s)
+   * init -> 1 item(s)
+   * bad -> 1 item(s)
+Choice Labels: 	5 labels
+   * east -> 14 item(s)
+   * west -> 14 item(s)
+   * north -> 14 item(s)
+   * south -> 14 item(s)
+   * bad -> 1 item(s)
+-------------------------------------------------------------- 
+Analyzing property 'Pmax=? [(!"bad") U "goal"]'
+Exploring the belief MDP... 
+##### POMDP Approximation Statistics ######
+# Input model: 
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	17
+Transitions: 	114
+Choices: 	59
+Observations: 	4
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * goal -> 1 item(s)
+   * init -> 1 item(s)
+   * bad -> 1 item(s)
+Choice Labels: 	5 labels
+   * east -> 14 item(s)
+   * west -> 14 item(s)
+   * north -> 14 item(s)
+   * south -> 14 item(s)
+   * bad -> 1 item(s)
+-------------------------------------------------------------- 
+# Max. Number of states with same observation: 14
+# Total check time: 0.794s
+# Number of refinement steps: 0
+# Number of states in the grid MDP for the over-approximation: 25618
+# Maximal resolution for over-approximation: 6
+# Time spend for building the over-approx grid MDP(s): 0.628s
+# Time spend for checking the over-approx grid MDP(s): 0.077s
+##########################################
+
+Result: ≤ 1
+Time for POMDP analysis: 0.795s.
+
+Performance statistics:
+  * peak memory usage: 118MB
+  * CPU time: 0.785s
+  * wallclock time: 0.840s

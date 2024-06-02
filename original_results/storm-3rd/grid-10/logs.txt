@@ -1,0 +1,151 @@
+2024-02-10 03:27:48,437 - cli.py - This is Paynt version 0.1.0.
+2024-02-10 03:27:48,437 - sketch.py - loading sketch from /synthesis/paynt/experiments/../models/models/grid-10-3obs-03/sketch.templ ...
+2024-02-10 03:27:48,442 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2024-02-10 03:27:48,442 - prism_parser.py - loading properties from /synthesis/paynt/experiments/../models/models/grid-10-3obs-03/sketch.props ...
+2024-02-10 03:27:48,442 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? [(!"bad") U "goal"] 
+2024-02-10 03:27:48,463 - sketch.py - constructed explicit quotient having 101 states and 389 actions
+2024-02-10 03:27:48,463 - property.py - converting until formula to eventually...
+2024-02-10 03:27:48,464 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2024-02-10 03:27:48,464 - quotient_pomdp.py - Constructed POMDP having 4 observations.
+2024-02-10 03:27:48,465 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1] ...
+2024-02-10 03:27:48,465 - quotient_pomdp.py - Constructed quotient MDP having 101 states and 389 actions.
+2024-02-10 03:27:48,472 - synthesizer_pomdp.py - Storm pomdp option enabled
+2024-02-10 03:27:48,472 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 5mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2024-02-10 03:27:48,472 - storm_pomdp_control.py - starting Storm POMDP analysis
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2024-02-10 03:29:03,133 - storm_pomdp_control.py - Storm POMDP analysis completed
+{0: [0, 1, 2, 3], 1: [0], 2: [0], 3: [0]}
+-----------Storm-----------                 
+Value = 0.5128510479204457 | Time elapsed = 74.7s | FSC size = 82
+FSC (dot) = digraph model {
+	0 [ label = "0: {__extra}" ];
+	1 [ label = "1: {__extra, target}" ];
+	2 [ label = "2: {[o=0], init}" ];
+	3 [ label = "3: {[o=1]}" ];
+	4 [ label = "4: {[o=1]}" ];
+	5 [ label = "5: {[o=3], cutoff, sched_0}" ];
+	6 [ label = "6: {[o=1]}" ];
+	7 [ label = "7: {[o=3], cutoff, sched_0}" ];
+	8 [ label = "8: {[o=1]}" ];
+	9 [ label = "9: {[o=3], cutoff, sched_0}" ];
+	10 [ label = "10: {[o=1]}" ];
+	11 [ label = "11: {[o=3], cutoff, sched_0}" ];
+	12 [ label = "12: {[o=1]}" ];
+	13 [ label = "13: {[o=3], cutoff, sched_0}" ];
+	14 [ label = "14: {[o=2], target}" ];
+	15 [ label = "15: {[o=1]}" ];
+	16 [ label = "16: {[o=3], cutoff, sched_0}" ];
+	17 [ label = "17: {[o=1]}" ];
+	18 [ label = "18: {[o=3], cutoff, sched_0}" ];
+	19 [ label = "19: {[o=1]}" ];
+	20 [ label = "20: {[o=3], cutoff, sched_0}" ];
+	21 [ label = "21: {[o=1]}" ];
+	22 [ label = "22: {[o=3], cutoff, sched_0}" ];
+	23 [ label = "23: {[o=1]}" ];
+	24 [ label = "24: {[o=3], cutoff, sched_0}" ];
+	25 [ label = "25: {[o=1], cutoff, sched_0}" ];
+	26 [ label = "26: {[o=3], cutoff, sched_0}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{loop}"];
+	"0c" -> 0 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{loop}"];
+	"1c" -> 1 [ label= "1" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{}"];
+	"2c" -> 3 [ label= "1" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{east}"];
+	"3c" -> 4 [ label= "0.904545" ];
+	"3c" -> 5 [ label= "0.0954545" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{east}"];
+	"4c" -> 6 [ label= "0.919095" ];
+	"4c" -> 7 [ label= "0.0809045" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{sched_0}"];
+	"5c" -> 0 [ label= "1" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{east}"];
+	"6c" -> 8 [ label= "0.938764" ];
+	"6c" -> 9 [ label= "0.0612356" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{sched_0}"];
+	"7c" -> 0 [ label= "1" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{east}"];
+	"8c" -> 10 [ label= "0.963308" ];
+	"8c" -> 11 [ label= "0.0366919" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{sched_0}"];
+	"9c" -> 0 [ label= "1" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{east}"];
+	"10c" -> 12 [ label= "0.971213" ];
+	"10c" -> 13 [ label= "0.0186258" ];
+	"10c" -> 14 [ label= "0.0101614" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{sched_0}"];
+	"11c" -> 0 [ label= "1" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{east}"];
+	"12c" -> 14 [ label= "0.0230178" ];
+	"12c" -> 15 [ label= "0.968429" ];
+	"12c" -> 16 [ label= "0.00855355" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{sched_0}"];
+	"13c" -> 0 [ label= "1" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{loop}"];
+	"14c" -> 14 [ label= "1" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{east}"];
+	"15c" -> 14 [ label= "0.0334915" ];
+	"15c" -> 17 [ label= "0.962813" ];
+	"15c" -> 18 [ label= "0.00369576" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{sched_0}"];
+	"16c" -> 0 [ label= "1" ];
+	"17c" [shape = "point"]
+	17 -> "17c" [label= "{east}"];
+	"17c" -> 14 [ label= "0.0408444" ];
+	"17c" -> 19 [ label= "0.957623" ];
+	"17c" -> 20 [ label= "0.00153313" ];
+	"18c" [shape = "point"]
+	18 -> "18c" [label= "{sched_0}"];
+	"18c" -> 0 [ label= "1" ];
+	"19c" [shape = "point"]
+	19 -> "19c" [label= "{east}"];
+	"19c" -> 14 [ label= "0.0459738" ];
+	"19c" -> 21 [ label= "0.953409" ];
+	"19c" -> 22 [ label= "0.000617265" ];
+	"20c" [shape = "point"]
+	20 -> "20c" [label= "{sched_0}"];
+	"20c" -> 0 [ label= "1" ];
+	"21c" [shape = "point"]
+	21 -> "21c" [label= "{south}"];
+	"21c" -> 14 [ label= "0.107171" ];
+	"21c" -> 23 [ label= "0.891293" ];
+	"21c" -> 24 [ label= "0.00153659" ];
+	"22c" [shape = "point"]
+	22 -> "22c" [label= "{sched_0}"];
+	"22c" -> 0 [ label= "1" ];
+	"23c" [shape = "point"]
+	23 -> "23c" [label= "{south}"];
+	"23c" -> 14 [ label= "0.101635" ];
+	"23c" -> 25 [ label= "0.897658" ];
+	"23c" -> 26 [ label= "0.000707109" ];
+	"24c" [shape = "point"]
+	24 -> "24c" [label= "{sched_0}"];
+	"24c" -> 0 [ label= "1" ];
+	"25c" [shape = "point"]
+	25 -> "25c" [label= "{sched_0}"];
+	"25c" -> 0 [ label= "0.428917" ];
+	"25c" -> 1 [ label= "0.571083" ];
+	"26c" [shape = "point"]
+	26 -> "26c" [label= "{sched_0}"];
+	"26c" -> 0 [ label= "1" ];
+}
+
+

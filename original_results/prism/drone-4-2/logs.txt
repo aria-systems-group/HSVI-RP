@@ -1,0 +1,41 @@
+PRISM
+=====
+
+Version: 4.8.1
+Memory limits: cudd=1g, java(heap)=32g
+
+Type:        POMDP
+Modules:     model 
+Variables:   s o 
+Observables: o
+
+Switching to explicit engine, which supports POMDPs...
+
+1 property:
+(1) Pmax=? [ "notbad" U "goal" ]
+
+---------------------------------------------------------------------
+
+Model checking: Pmax=? [ "notbad" U "goal" ]
+
+Building model...
+
+Computing reachable states... 1226 states
+Reachable states exploration and model construction done in 0.123 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.152 seconds.
+
+Type:        POMDP
+States:      1226 (1 initial)
+Obs/unobs:   761/1226
+Transitions: 6680
+Choices:     3026
+Max/avg:     4/2.47
+
+Starting probabilistic reachability (max)...
+Starting fixed-resolution grid approximation (max)...
+target obs=10, remain obs=712
+Grid statistics: resolution=2, points=3849
+Building belief space approximation...
+Solving belief space approximation...

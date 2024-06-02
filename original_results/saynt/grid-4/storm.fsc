@@ -1,0 +1,94 @@
+digraph model {
+	0 [ label = "0: {__extra}" ];
+	1 [ label = "1: {__extra, target}" ];
+	2 [ label = "2: {[o=0], init}" ];
+	3 [ label = "3: {[o=1]}" ];
+	4 [ label = "4: {[o=1]}" ];
+	5 [ label = "5: {[o=3]}" ];
+	6 [ label = "6: {[o=2], target}" ];
+	7 [ label = "7: {[o=1]}" ];
+	8 [ label = "8: {[o=1]}" ];
+	9 [ label = "9: {[o=1]}" ];
+	10 [ label = "10: {[o=1]}" ];
+	11 [ label = "11: {[o=1]}" ];
+	12 [ label = "12: {[o=1]}" ];
+	13 [ label = "13: {[o=1]}" ];
+	14 [ label = "14: {[o=1]}" ];
+	15 [ label = "15: {[o=1]}" ];
+	16 [ label = "16: {[o=1], cutoff, finite_mem}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{loop}"];
+	"0c" -> 0 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{loop}"];
+	"1c" -> 1 [ label= "1" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{}"];
+	"2c" -> 3 [ label= "1" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{east}"];
+	"3c" -> 4 [ label= "0.871429" ];
+	"3c" -> 5 [ label= "0.0642857" ];
+	"3c" -> 6 [ label= "0.0642857" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{east}"];
+	"4c" -> 5 [ label= "0.00737705" ];
+	"4c" -> 6 [ label= "0.0737705" ];
+	"4c" -> 7 [ label= "0.918852" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{bad}"];
+	"5c" -> 5 [ label= "1" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{loop}"];
+	"6c" -> 6 [ label= "1" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{east}"];
+	"7c" -> 5 [ label= "0.000802855" ];
+	"7c" -> 6 [ label= "0.0802855" ];
+	"7c" -> 8 [ label= "0.918912" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{east}"];
+	"8c" -> 5 [ label= "8.73702e-05" ];
+	"8c" -> 6 [ label= "0.0236773" ];
+	"8c" -> 9 [ label= "0.976235" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{east}"];
+	"9c" -> 5 [ label= "8.9497e-06" ];
+	"9c" -> 6 [ label= "0.00468069" ];
+	"9c" -> 10 [ label= "0.99531" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{east}"];
+	"10c" -> 5 [ label= "8.99187e-07" ];
+	"10c" -> 6 [ label= "0.000769704" ];
+	"10c" -> 11 [ label= "0.999229" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{east}"];
+	"11c" -> 5 [ label= "8.99881e-08" ];
+	"11c" -> 6 [ label= "0.000114285" ];
+	"11c" -> 12 [ label= "0.999886" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{east}"];
+	"12c" -> 5 [ label= "8.99984e-09" ];
+	"12c" -> 6 [ label= "1.58847e-05" ];
+	"12c" -> 13 [ label= "0.999984" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{east}"];
+	"13c" -> 5 [ label= "8.99998e-10" ];
+	"13c" -> 6 [ label= "2.10689e-06" ];
+	"13c" -> 14 [ label= "0.999998" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{east}"];
+	"14c" -> 5 [ label= "9e-11" ];
+	"14c" -> 6 [ label= "2.6982e-07" ];
+	"14c" -> 15 [ label= "1" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{east}"];
+	"15c" -> 5 [ label= "9e-12" ];
+	"15c" -> 6 [ label= "3.3624e-08" ];
+	"15c" -> 16 [ label= "1" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{mem_node_4}"];
+	"16c" -> 0 [ label= "1.01363e-12" ];
+	"16c" -> 1 [ label= "1" ];
+}
+

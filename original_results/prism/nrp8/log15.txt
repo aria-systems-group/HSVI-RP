@@ -1,0 +1,66 @@
+PRISM
+=====
+
+Version: 4.8.1
+Memory limits: cudd=1g, java(heap)=32g
+
+Type:        POMDP
+Modules:     originator malicious_recipient
+Variables:   o N ack r mess last
+Observables: last r mess ack o
+
+1 property:
+(1) Pmax=? [ F "unfair" ]
+
+---------------------------------------------------------------------
+
+Model checking: Pmax=? [ F "unfair" ]
+
+Switching to explicit engine, which supports POMDPs...
+
+Building model...
+
+Computing reachable states... 125 states
+Reachable states exploration and model construction done in 0.026 secs.
+Sorting reachable states list...
+
+Time for model construction: 0.052 seconds.
+
+Type:        POMDP
+States:      125 (1 initial)
+Obs/unobs:   41/9
+Transitions: 168
+Choices:     161
+Max/avg:     2/1.29
+
+Starting probabilistic reachability (max)...
+Starting fixed-resolution grid approximation (max)...
+target obs=8, remain obs=41
+Grid statistics: resolution=15, points=735480
+Building belief space approximation...
+Solving belief space approximation...
+Belief space value iteration (max) took 19 iterations and 50.784 seconds.
+Outer bound: 0.1891952471338861 (exact floating point)
+
+Building strategy-induced model...
+Strategy-induced model: 24 states (1 initial), 31 transitions, 24 choices, dist max/avg = 1/1.00
+Starting probabilistic reachability (min)...
+Starting Prob0 (min)...
+Prob0 (min) took 17 iterations and 0.007 seconds.
+Starting Prob1 (min)...
+Prob1 (min) took 19 iterations and 0.004 seconds.
+target=1, yes=1, no=7, maybe=16
+Starting value iteration (min, with Power method)...
+Value iteration (min, with Power method) took 17 iterations, 391 multiplications and 0.004 seconds.
+Probabilistic reachability took 0.02 seconds.
+Inner bound: 0.1250000000000001 (exact floating point)
+
+Fixed-resolution grid approximation (max) took 58.031 seconds.
+Result bounds: [0.1250000000000001,0.18919524713388614]
+Probabilistic reachability took 58.032 seconds.
+
+Value in the initial state: 0.15709762356694312
+
+Time for model checking: 58.035 seconds.
+
+Result: 0.15709762356694312 (+/- 0.032097623566943; rel err 0.20431641700337638)

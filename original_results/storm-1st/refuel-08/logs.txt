@@ -1,0 +1,405 @@
+2024-02-06 08:06:31,639 - cli.py - This is Paynt version 0.1.0.
+2024-02-06 08:06:31,639 - sketch.py - loading sketch from /synthesis/paynt/experiments/../models/models/refuel-08/sketch.templ ...
+2024-02-06 08:06:31,643 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2024-02-06 08:06:31,643 - prism_parser.py - loading properties from /synthesis/paynt/experiments/../models/models/refuel-08/sketch.props ...
+2024-02-06 08:06:31,644 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
+2024-02-06 08:06:31,674 - sketch.py - constructed explicit quotient having 470 states and 1431 actions
+2024-02-06 08:06:31,674 - property.py - converting until formula to eventually...
+2024-02-06 08:06:31,674 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2024-02-06 08:06:31,675 - quotient_pomdp.py - Constructed POMDP having 66 observations.
+2024-02-06 08:06:31,686 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2024-02-06 08:06:31,686 - quotient_pomdp.py - Constructed quotient MDP having 470 states and 1431 actions.
+2024-02-06 08:06:31,762 - synthesizer_pomdp.py - Storm pomdp option enabled
+2024-02-06 08:06:31,762 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2024-02-06 08:06:31,762 - storm_pomdp_control.py - starting Storm POMDP analysis
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2024-02-06 08:06:33,501 - storm_pomdp_control.py - Storm POMDP analysis completed
+{0: [0], 1: [0], 2: [0, 1, 2, 3], 3: [0, 1, 2, 3], 4: [0, 1, 2], 5: [0, 1, 2, 3], 6: [0], 7: [0, 1, 2, 3], 8: [0, 1, 2], 9: [0, 1, 2], 10: [0, 1, 2], 11: [0, 1, 2], 12: [0, 1], 13: [0], 14: [0, 1, 2], 15: [0, 1, 2, 3], 16: [0, 1, 2], 17: [0, 1, 2], 18: [0], 19: [1, 2], 20: [0], 21: [0], 22: [0, 1], 23: [0, 1], 24: [0, 1, 2], 25: [0, 2], 26: [0], 27: [0, 1, 2], 28: [0, 1, 2], 29: [0], 30: [0], 31: [1, 2], 32: [0], 33: [0], 34: [0], 35: [0], 36: [0], 37: [0], 38: [0], 39: [0], 40: [0], 41: [0], 42: [0], 43: [0, 1, 2], 44: [0], 45: [0], 46: [0, 2], 47: [0], 48: [0, 1], 49: [0], 50: [0, 1], 51: [0], 52: [0], 53: [0], 54: [0, 1, 2], 55: [0, 1], 56: [0], 57: [0], 58: [0], 59: [0], 60: [0], 61: [0, 1], 62: [0], 63: [0, 1, 2], 64: [0, 1], 65: [0, 1]}
+-----------Storm-----------                 
+Value = 0.439721485067457 | Time elapsed = 1.7s | FSC size = 534
+FSC (dot) = digraph model {
+	0 [ label = "0: {__extra}" ];
+	1 [ label = "1: {__extra, target}" ];
+	2 [ label = "2: {[!start	& fuel=7	& amdone=0	& cangoeast=1	& cangonorth=0	& cangosouth=1	& cangowest=0	& hascrash=0	& refuelAllowed=0]
+init}" ];
+	3 [ label = "3: {[start	& fuel=7	& amdone=0	& cangoeast=1	& cangonorth=0	& cangosouth=1	& cangowest=0	& hascrash=0	& refuelAllowed=0]
+}" ];
+	4 [ label = "4: {[start	& fuel=6	& amdone=0	& cangoeast=1	& cangonorth=0	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	5 [ label = "5: {[start	& fuel=5	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	6 [ label = "6: {[start	& fuel=4	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	7 [ label = "7: {[start	& fuel=3	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	8 [ label = "8: {[start	& fuel=3	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	9 [ label = "9: {[start	& fuel=2	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	10 [ label = "10: {[start	& fuel=2	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	11 [ label = "11: {[start	& fuel=7	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	12 [ label = "12: {[start	& fuel=1	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	13 [ label = "13: {[start	& fuel=1	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	14 [ label = "14: {[start	& fuel=6	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	15 [ label = "15: {[start	& fuel=0	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	16 [ label = "16: {[start	& fuel=0	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	17 [ label = "17: {[start	& fuel=0	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	18 [ label = "18: {[start	& fuel=7	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	19 [ label = "19: {[start	& fuel=5	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	20 [ label = "20: {[start	& fuel=5	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	21 [ label = "21: {[start	& fuel=7	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	22 [ label = "22: {[start	& fuel=7	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	23 [ label = "23: {[start	& fuel=6	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	24 [ label = "24: {[start	& fuel=4	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	25 [ label = "25: {[start	& fuel=4	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	26 [ label = "26: {[start	& fuel=6	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	27 [ label = "27: {[start	& fuel=6	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	28 [ label = "28: {[start	& fuel=5	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=1	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	29 [ label = "29: {[start	& fuel=5	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	30 [ label = "30: {[start	& fuel=3	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	31 [ label = "31: {[start	& fuel=3	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=1	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	32 [ label = "32: {[start	& fuel=3	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	33 [ label = "33: {[start	& fuel=5	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	34 [ label = "34: {[start	& fuel=5	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	35 [ label = "35: {[start	& fuel=4	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=1	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	36 [ label = "36: {[start	& fuel=4	& amdone=0	& cangoeast=0	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	37 [ label = "37: {[start	& fuel=4	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=0	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	38 [ label = "38: {[start	& fuel=4	& amdone=0	& cangoeast=0	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	39 [ label = "39: {[start	& fuel=4	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	40 [ label = "40: {[start	& fuel=2	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	41 [ label = "41: {[start	& fuel=2	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	42 [ label = "42: {[start	& fuel=2	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	43 [ label = "43: {[start	& fuel=4	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	44 [ label = "44: {[start	& fuel=4	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	45 [ label = "45: {[start	& fuel=3	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=0	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	46 [ label = "46: {[start	& fuel=3	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	47 [ label = "47: {[start	& fuel=3	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	48 [ label = "48: {[start	& fuel=3	& amdone=0	& cangoeast=0	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	49 [ label = "49: {[start	& fuel=3	& amdone=0	& cangoeast=0	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	50 [ label = "50: {[start	& fuel=1	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=1]
+}" ];
+	51 [ label = "51: {[start	& fuel=1	& amdone=1	& cangoeast=0	& cangonorth=1	& cangosouth=0	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+target}" ];
+	52 [ label = "52: {[start	& fuel=1	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	53 [ label = "53: {[start	& fuel=1	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	54 [ label = "54: {[start	& fuel=3	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	55 [ label = "55: {[start	& fuel=3	& amdone=0	& cangoeast=0	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	56 [ label = "56: {[start	& fuel=2	& amdone=1	& cangoeast=0	& cangonorth=1	& cangosouth=0	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+target}" ];
+	57 [ label = "57: {[start	& fuel=2	& amdone=0	& cangoeast=0	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	58 [ label = "58: {[start	& fuel=0	& amdone=1	& cangoeast=0	& cangonorth=1	& cangosouth=0	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+target}" ];
+	59 [ label = "59: {[start	& fuel=0	& amdone=0	& cangoeast=0	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	60 [ label = "60: {[start	& fuel=0	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	61 [ label = "61: {[start	& fuel=0	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=0	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	62 [ label = "62: {[start	& fuel=0	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	63 [ label = "63: {[start	& fuel=2	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	64 [ label = "64: {[start	& fuel=2	& amdone=0	& cangoeast=0	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	65 [ label = "65: {[start	& fuel=1	& amdone=0	& cangoeast=0	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	66 [ label = "66: {[start	& fuel=1	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+}" ];
+	67 [ label = "67: {[start	& fuel=0	& amdone=0	& cangoeast=1	& cangonorth=1	& cangosouth=1	& cangowest=1	& hascrash=0	& refuelAllowed=0]
+cutoff, sched_0}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{loop}"];
+	"0c" -> 0 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{loop}"];
+	"1c" -> 1 [ label= "1" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{placement}"];
+	"2c" -> 3 [ label= "1" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{south}"];
+	"3c" -> 4 [ label= "1" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{east}"];
+	"4c" -> 5 [ label= "1" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{south}"];
+	"5c" -> 6 [ label= "1" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{east}"];
+	"6c" -> 7 [ label= "0.8236" ];
+	"6c" -> 8 [ label= "0.1764" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{south}"];
+	"7c" -> 9 [ label= "0.174915" ];
+	"7c" -> 10 [ label= "0.825085" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{refuel}"];
+	"8c" -> 11 [ label= "1" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{refuel}"];
+	"9c" -> 11 [ label= "1" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{east}"];
+	"10c" -> 12 [ label= "0.797666" ];
+	"10c" -> 13 [ label= "0.202334" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{south}"];
+	"11c" -> 14 [ label= "1" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{north}"];
+	"12c" -> 16 [ label= "0.237811" ];
+	"12c" -> 17 [ label= "0.762189" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{refuel}"];
+	"13c" -> 18 [ label= "1" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{east}"];
+	"14c" -> 19 [ label= "0.91" ];
+	"14c" -> 20 [ label= "0.09" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{refuel}"];
+	"15c" -> 21 [ label= "1" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{refuel}"];
+	"16c" -> 22 [ label= "1" ];
+	"17c" [shape = "point"]
+	17 -> "17c" [label= "{sched_0}"];
+	"17c" -> 0 [ label= "1" ];
+	"18c" [shape = "point"]
+	18 -> "18c" [label= "{south}"];
+	"18c" -> 23 [ label= "1" ];
+	"19c" [shape = "point"]
+	19 -> "19c" [label= "{south}"];
+	"19c" -> 24 [ label= "0.161538" ];
+	"19c" -> 25 [ label= "0.838462" ];
+	"20c" [shape = "point"]
+	20 -> "20c" [label= "{refuel}"];
+	"20c" -> 21 [ label= "1" ];
+	"21c" [shape = "point"]
+	21 -> "21c" [label= "{south}"];
+	"21c" -> 26 [ label= "1" ];
+	"22c" [shape = "point"]
+	22 -> "22c" [label= "{south}"];
+	"22c" -> 27 [ label= "1" ];
+	"23c" [shape = "point"]
+	23 -> "23c" [label= "{east}"];
+	"23c" -> 20 [ label= "0.07701" ];
+	"23c" -> 28 [ label= "0.01299" ];
+	"23c" -> 29 [ label= "0.91" ];
+	"24c" [shape = "point"]
+	24 -> "24c" [label= "{refuel}"];
+	"24c" -> 21 [ label= "1" ];
+	"25c" [shape = "point"]
+	25 -> "25c" [label= "{east}"];
+	"25c" -> 30 [ label= "0.314679" ];
+	"25c" -> 32 [ label= "0.685321" ];
+	"26c" [shape = "point"]
+	26 -> "26c" [label= "{north}"];
+	"26c" -> 20 [ label= "0.58" ];
+	"26c" -> 33 [ label= "0.42" ];
+	"27c" [shape = "point"]
+	27 -> "27c" [label= "{east}"];
+	"27c" -> 20 [ label= "0.087506" ];
+	"27c" -> 28 [ label= "0.00249401" ];
+	"27c" -> 34 [ label= "0.91" ];
+	"28c" [shape = "point"]
+	28 -> "28c" [label= "{sched_0}"];
+	"28c" -> 0 [ label= "1" ];
+	"29c" [shape = "point"]
+	29 -> "29c" [label= "{east}"];
+	"29c" -> 24 [ label= "0.138223" ];
+	"29c" -> 35 [ label= "0.0233154" ];
+	"29c" -> 37 [ label= "0.0666155" ];
+	"29c" -> 39 [ label= "0.771846" ];
+	"30c" [shape = "point"]
+	30 -> "30c" [label= "{refuel}"];
+	"30c" -> 21 [ label= "1" ];
+	"31c" [shape = "point"]
+	31 -> "31c" [label= "{sched_0}"];
+	"31c" -> 0 [ label= "1" ];
+	"32c" [shape = "point"]
+	32 -> "32c" [label= "{north}"];
+	"32c" -> 40 [ label= "0.300803" ];
+	"32c" -> 41 [ label= "0.699197" ];
+	"33c" [shape = "point"]
+	33 -> "33c" [label= "{south}"];
+	"33c" -> 24 [ label= "0.35" ];
+	"33c" -> 38 [ label= "0.15" ];
+	"33c" -> 43 [ label= "0.5" ];
+	"34c" [shape = "point"]
+	34 -> "34c" [label= "{south}"];
+	"34c" -> 24 [ label= "0.157062" ];
+	"34c" -> 35 [ label= "0.00447643" ];
+	"34c" -> 36 [ label= "0.0127898" ];
+	"34c" -> 44 [ label= "0.825672" ];
+	"35c" [shape = "point"]
+	35 -> "35c" [label= "{sched_0}"];
+	"35c" -> 0 [ label= "1" ];
+	"36c" [shape = "point"]
+	36 -> "36c" [label= "{sched_0}"];
+	"36c" -> 0 [ label= "0.094619" ];
+	"36c" -> 1 [ label= "0.905381" ];
+	"37c" [shape = "point"]
+	37 -> "37c" [label= "{sched_0}"];
+	"37c" -> 0 [ label= "0.094619" ];
+	"37c" -> 1 [ label= "0.905381" ];
+	"38c" [shape = "point"]
+	38 -> "38c" [label= "{east}"];
+	"38c" -> 49 [ label= "1" ];
+	"39c" [shape = "point"]
+	39 -> "39c" [label= "{south}"];
+	"39c" -> 30 [ label= "0.292499" ];
+	"39c" -> 31 [ label= "0.0493387" ];
+	"39c" -> 47 [ label= "0.637017" ];
+	"39c" -> 48 [ label= "0.0211451" ];
+	"40c" [shape = "point"]
+	40 -> "40c" [label= "{refuel}"];
+	"40c" -> 21 [ label= "1" ];
+	"41c" [shape = "point"]
+	41 -> "41c" [label= "{west}"];
+	"41c" -> 50 [ label= "0.199024" ];
+	"41c" -> 52 [ label= "0.800976" ];
+	"42c" [shape = "point"]
+	42 -> "42c" [label= "{north}"];
+	"42c" -> 50 [ label= "0.199024" ];
+	"42c" -> 53 [ label= "0.800976" ];
+	"43c" [shape = "point"]
+	43 -> "43c" [label= "{south}"];
+	"43c" -> 54 [ label= "0.21" ];
+	"43c" -> 55 [ label= "0.79" ];
+	"44c" [shape = "point"]
+	44 -> "44c" [label= "{east}"];
+	"44c" -> 30 [ label= "0.310698" ];
+	"44c" -> 31 [ label= "0.00885522" ];
+	"44c" -> 45 [ label= "0.0037951" ];
+	"44c" -> 46 [ label= "0.676652" ];
+	"45c" [shape = "point"]
+	45 -> "45c" [label= "{south}"];
+	"45c" -> 56 [ label= "1" ];
+	"46c" [shape = "point"]
+	46 -> "46c" [label= "{north}"];
+	"46c" -> 40 [ label= "0.300803" ];
+	"46c" -> 41 [ label= "0.699197" ];
+	"47c" [shape = "point"]
+	47 -> "47c" [label= "{west}"];
+	"47c" -> 40 [ label= "0.300803" ];
+	"47c" -> 42 [ label= "0.699197" ];
+	"48c" [shape = "point"]
+	48 -> "48c" [label= "{east}"];
+	"48c" -> 56 [ label= "1" ];
+	"49c" [shape = "point"]
+	49 -> "49c" [label= "{east}"];
+	"49c" -> 56 [ label= "0.51" ];
+	"49c" -> 57 [ label= "0.49" ];
+	"50c" [shape = "point"]
+	50 -> "50c" [label= "{refuel}"];
+	"50c" -> 21 [ label= "1" ];
+	"51c" [shape = "point"]
+	51 -> "51c" [label= "{loop}"];
+	"51c" -> 51 [ label= "1" ];
+	"52c" [shape = "point"]
+	52 -> "52c" [label= "{south}"];
+	"52c" -> 15 [ label= "0.213137" ];
+	"52c" -> 59 [ label= "0.0451775" ];
+	"52c" -> 60 [ label= "0.741685" ];
+	"53c" [shape = "point"]
+	53 -> "53c" [label= "{east}"];
+	"53c" -> 15 [ label= "0.213137" ];
+	"53c" -> 61 [ label= "0.0451775" ];
+	"53c" -> 62 [ label= "0.741685" ];
+	"54c" [shape = "point"]
+	54 -> "54c" [label= "{north}"];
+	"54c" -> 40 [ label= "0.3" ];
+	"54c" -> 63 [ label= "0.7" ];
+	"55c" [shape = "point"]
+	55 -> "55c" [label= "{east}"];
+	"55c" -> 64 [ label= "1" ];
+	"56c" [shape = "point"]
+	56 -> "56c" [label= "{loop}"];
+	"56c" -> 56 [ label= "1" ];
+	"57c" [shape = "point"]
+	57 -> "57c" [label= "{east}"];
+	"57c" -> 51 [ label= "1" ];
+	"58c" [shape = "point"]
+	58 -> "58c" [label= "{loop}"];
+	"58c" -> 58 [ label= "1" ];
+	"59c" [shape = "point"]
+	59 -> "59c" [label= "{sched_0}"];
+	"59c" -> 0 [ label= "1" ];
+	"60c" [shape = "point"]
+	60 -> "60c" [label= "{sched_0}"];
+	"60c" -> 0 [ label= "1" ];
+	"61c" [shape = "point"]
+	61 -> "61c" [label= "{sched_0}"];
+	"61c" -> 0 [ label= "1" ];
+	"62c" [shape = "point"]
+	62 -> "62c" [label= "{sched_0}"];
+	"62c" -> 0 [ label= "1" ];
+	"63c" [shape = "point"]
+	63 -> "63c" [label= "{north}"];
+	"63c" -> 50 [ label= "0.7" ];
+	"63c" -> 66 [ label= "0.3" ];
+	"64c" [shape = "point"]
+	64 -> "64c" [label= "{east}"];
+	"64c" -> 51 [ label= "0.51" ];
+	"64c" -> 65 [ label= "0.49" ];
+	"65c" [shape = "point"]
+	65 -> "65c" [label= "{east}"];
+	"65c" -> 58 [ label= "1" ];
+	"66c" [shape = "point"]
+	66 -> "66c" [label= "{south}"];
+	"66c" -> 15 [ label= "0.7" ];
+	"66c" -> 67 [ label= "0.3" ];
+	"67c" [shape = "point"]
+	67 -> "67c" [label= "{sched_0}"];
+	"67c" -> 0 [ label= "1" ];
+}
+
+

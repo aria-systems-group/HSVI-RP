@@ -1,0 +1,17 @@
+2024-02-06 08:52:15,152 - cli.py - This is Paynt version 0.1.0.
+2024-02-06 08:52:15,153 - sketch.py - loading sketch from /synthesis/paynt/experiments/../models/models/drone-4-1/sketch.templ ...
+2024-02-06 08:52:15,165 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2024-02-06 08:52:15,166 - prism_parser.py - loading properties from /synthesis/paynt/experiments/../models/models/drone-4-1/sketch.props ...
+ WARN (FormulaParserGrammar.cpp:328): Identifier `R' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'R' will not be parsed correctly.
+2024-02-06 08:52:15,167 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
+2024-02-06 08:52:15,219 - sketch.py - constructed explicit quotient having 1226 states and 2954 actions
+2024-02-06 08:52:15,220 - property.py - converting until formula to eventually...
+2024-02-06 08:52:15,220 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2024-02-06 08:52:15,222 - quotient_pomdp.py - Constructed POMDP having 384 observations.
+2024-02-06 08:52:15,287 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2024-02-06 08:52:15,288 - quotient_pomdp.py - Constructed quotient MDP having 1226 states and 2954 actions.
+2024-02-06 08:52:15,574 - synthesizer_pomdp.py - Storm pomdp option enabled
+2024-02-06 08:52:15,574 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 20mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2024-02-06 08:52:15,576 - storm_pomdp_control.py - starting Storm POMDP analysis
+### 6939216 beliefs in underapproximation MDP ##### 3304137 beliefs queued
+### 14093856 beliefs in underapproximation MDP ##### 8080177 beliefs queued

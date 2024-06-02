@@ -1,0 +1,30 @@
+Storm-pomdp 1.8.1
+
+Command line arguments: --prism sketch.templ --prop sketch.props --belief-exploration discretize --resolution 4 -tm --signal-timeout 60 --sound --lpsolver gurobi '--gurobi:inttol' 1e-9 '--topological:minmax' svi
+Current working directory: /opt/storm/build/bin/output/grid-10-3obs-03
+
+Time for model input parsing: 0.003s.
+
+Time for model construction: 0.020s.
+
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	101
+Transitions: 	756
+Choices: 	389
+Observations: 	4
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * goal -> 1 item(s)
+   * init -> 1 item(s)
+   * bad -> 3 item(s)
+Choice Labels: 	5 labels
+   * east -> 96 item(s)
+   * west -> 96 item(s)
+   * north -> 96 item(s)
+   * south -> 96 item(s)
+   * bad -> 3 item(s)
+-------------------------------------------------------------- 
+Analyzing property 'Pmax=? [(!"bad") U "goal"]'
+Exploring the belief MDP... 

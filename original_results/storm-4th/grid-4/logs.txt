@@ -1,0 +1,122 @@
+2024-02-06 08:43:11,009 - cli.py - This is Paynt version 0.1.0.
+2024-02-06 08:43:11,010 - sketch.py - loading sketch from /synthesis/paynt/experiments/../models/models/grid-4/sketch.templ ...
+2024-02-06 08:43:11,024 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2024-02-06 08:43:11,024 - prism_parser.py - loading properties from /synthesis/paynt/experiments/../models/models/grid-4/sketch.props ...
+2024-02-06 08:43:11,025 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? [(!"bad") U "goal"] 
+2024-02-06 08:43:11,074 - sketch.py - constructed explicit quotient having 17 states and 59 actions
+2024-02-06 08:43:11,074 - property.py - converting until formula to eventually...
+2024-02-06 08:43:11,074 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2024-02-06 08:43:11,075 - quotient_pomdp.py - Constructed POMDP having 4 observations.
+2024-02-06 08:43:11,076 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1] ...
+2024-02-06 08:43:11,076 - quotient_pomdp.py - Constructed quotient MDP having 17 states and 59 actions.
+2024-02-06 08:43:11,077 - synthesizer_pomdp.py - Storm pomdp option enabled
+2024-02-06 08:43:11,077 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 10mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2024-02-06 08:43:11,077 - storm_pomdp_control.py - starting Storm POMDP analysis
+### 10000002 beliefs in underapproximation MDP ##### 7353112 beliefs queued
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2024-02-06 08:45:08,700 - storm_pomdp_control.py - Storm POMDP analysis completed
+{0: [0, 1, 2, 3], 1: [0], 2: [0], 3: [0]}
+-----------Storm-----------                 
+Value = 0.9283787193762961 | Time elapsed = 117.6s | FSC size = 80
+FSC (dot) = digraph model {
+	0 [ label = "0: {__extra}" ];
+	1 [ label = "1: {__extra, target}" ];
+	2 [ label = "2: {[o=0], init}" ];
+	3 [ label = "3: {[o=1]}" ];
+	4 [ label = "4: {[o=1]}" ];
+	5 [ label = "5: {[o=3], cutoff, sched_0}" ];
+	6 [ label = "6: {[o=2], target}" ];
+	7 [ label = "7: {[o=1]}" ];
+	8 [ label = "8: {[o=1]}" ];
+	9 [ label = "9: {[o=1]}" ];
+	10 [ label = "10: {[o=1]}" ];
+	11 [ label = "11: {[o=1]}" ];
+	12 [ label = "12: {[o=1]}" ];
+	13 [ label = "13: {[o=1]}" ];
+	14 [ label = "14: {[o=1]}" ];
+	15 [ label = "15: {[o=1]}" ];
+	16 [ label = "16: {[o=1]}" ];
+	17 [ label = "17: {[o=1], cutoff, sched_0}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{loop}"];
+	"0c" -> 0 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{loop}"];
+	"1c" -> 1 [ label= "1" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{}"];
+	"2c" -> 3 [ label= "1" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{east}"];
+	"3c" -> 4 [ label= "0.871429" ];
+	"3c" -> 5 [ label= "0.0642857" ];
+	"3c" -> 6 [ label= "0.0642857" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{east}"];
+	"4c" -> 5 [ label= "0.00737705" ];
+	"4c" -> 6 [ label= "0.0737705" ];
+	"4c" -> 7 [ label= "0.918852" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{sched_0}"];
+	"5c" -> 0 [ label= "1" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{loop}"];
+	"6c" -> 6 [ label= "1" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{east}"];
+	"7c" -> 5 [ label= "0.000802855" ];
+	"7c" -> 6 [ label= "0.0802855" ];
+	"7c" -> 8 [ label= "0.918912" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{east}"];
+	"8c" -> 5 [ label= "8.73702e-05" ];
+	"8c" -> 6 [ label= "0.0236773" ];
+	"8c" -> 9 [ label= "0.976235" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{east}"];
+	"9c" -> 5 [ label= "8.9497e-06" ];
+	"9c" -> 6 [ label= "0.00468069" ];
+	"9c" -> 10 [ label= "0.99531" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{east}"];
+	"10c" -> 5 [ label= "8.99187e-07" ];
+	"10c" -> 6 [ label= "0.000769704" ];
+	"10c" -> 11 [ label= "0.999229" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{south}"];
+	"11c" -> 5 [ label= "4.94934e-06" ];
+	"11c" -> 6 [ label= "0.179976" ];
+	"11c" -> 12 [ label= "0.820019" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{south}"];
+	"12c" -> 5 [ label= "6.03564e-06" ];
+	"12c" -> 6 [ label= "0.416877" ];
+	"12c" -> 13 [ label= "0.583117" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{south}"];
+	"13c" -> 5 [ label= "1.96663e-06" ];
+	"13c" -> 6 [ label= "0.748764" ];
+	"13c" -> 14 [ label= "0.251234" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{south}"];
+	"14c" -> 5 [ label= "1.15358e-06" ];
+	"14c" -> 6 [ label= "0.810235" ];
+	"14c" -> 15 [ label= "0.189763" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{south}"];
+	"15c" -> 5 [ label= "8.03304e-07" ];
+	"15c" -> 6 [ label= "0.824741" ];
+	"15c" -> 16 [ label= "0.175258" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{south}"];
+	"16c" -> 5 [ label= "5.69847e-07" ];
+	"16c" -> 6 [ label= "0.770503" ];
+	"16c" -> 17 [ label= "0.229497" ];
+	"17c" [shape = "point"]
+	17 -> "17c" [label= "{sched_0}"];
+	"17c" -> 0 [ label= "0.282319" ];
+	"17c" -> 1 [ label= "0.717681" ];
+}
+
+

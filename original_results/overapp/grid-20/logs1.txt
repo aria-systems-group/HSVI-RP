@@ -1,0 +1,67 @@
+Storm-pomdp 1.8.1
+
+Command line arguments: --prism sketch.templ --prop sketch.props --belief-exploration discretize --resolution 1 -tm --signal-timeout 60 --sound --lpsolver gurobi '--gurobi:inttol' 1e-9 '--topological:minmax' svi
+Current working directory: /opt/storm/build/bin/output/grid-20-5obs-05
+
+Time for model input parsing: 0.004s.
+
+Time for model construction: 0.021s.
+
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	401
+Transitions: 	3093
+Choices: 	1580
+Observations: 	4
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * goal -> 1 item(s)
+   * init -> 1 item(s)
+   * bad -> 6 item(s)
+Choice Labels: 	5 labels
+   * east -> 393 item(s)
+   * west -> 393 item(s)
+   * north -> 393 item(s)
+   * south -> 393 item(s)
+   * bad -> 6 item(s)
+-------------------------------------------------------------- 
+Analyzing property 'Pmax=? [(!"bad") U "goal"]'
+Exploring the belief MDP... 
+##### POMDP Approximation Statistics ######
+# Input model: 
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	401
+Transitions: 	3093
+Choices: 	1580
+Observations: 	4
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * goal -> 1 item(s)
+   * init -> 1 item(s)
+   * bad -> 6 item(s)
+Choice Labels: 	5 labels
+   * east -> 393 item(s)
+   * west -> 393 item(s)
+   * north -> 393 item(s)
+   * south -> 393 item(s)
+   * bad -> 6 item(s)
+-------------------------------------------------------------- 
+# Max. Number of states with same observation: 393
+# Total check time: 0.222s
+# Number of refinement steps: 0
+# Number of states in the grid MDP for the over-approximation: 403
+# Maximal resolution for over-approximation: 1
+# Time spend for building the over-approx grid MDP(s): 0.002s
+# Time spend for checking the over-approx grid MDP(s): 0.000s
+##########################################
+
+Result: ≤ 1
+Time for POMDP analysis: 0.222s.
+
+Performance statistics:
+  * peak memory usage: 63MB
+  * CPU time: 0.256s
+  * wallclock time: 0.251s

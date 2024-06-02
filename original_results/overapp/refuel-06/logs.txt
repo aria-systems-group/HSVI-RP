@@ -1,0 +1,21 @@
+2024-02-06 07:45:26,296 - cli.py - This is Paynt version 0.1.0.
+2024-02-06 07:45:26,297 - sketch.py - loading sketch from /synthesis/paynt/experiments/../models/models/refuel-06/sketch.templ ...
+2024-02-06 07:45:26,302 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2024-02-06 07:45:26,302 - prism_parser.py - loading properties from /synthesis/paynt/experiments/../models/models/refuel-06/sketch.props ...
+2024-02-06 07:45:26,302 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
+2024-02-06 07:45:26,324 - sketch.py - constructed explicit quotient having 208 states and 565 actions
+2024-02-06 07:45:26,325 - property.py - converting until formula to eventually...
+2024-02-06 07:45:26,325 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2024-02-06 07:45:26,325 - quotient_pomdp.py - Constructed POMDP having 50 observations.
+2024-02-06 07:45:26,329 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2024-02-06 07:45:26,329 - quotient_pomdp.py - Constructed quotient MDP having 208 states and 565 actions.
+2024-02-06 07:45:26,342 - synthesizer_pomdp.py - Storm pomdp option enabled
+2024-02-06 07:45:26,342 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - overapp, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2024-02-06 07:45:26,342 - storm_pomdp_control.py - starting Storm POMDP analysis
+2024-02-06 07:45:26,355 - storm_pomdp_control.py - Storm POMDP analysis completed
+-----------Storm-----------                 
+Value = -inf | Time elapsed = 0.0s | FSC size = 200
+
+.....
+0.7842998983300711
+-inf

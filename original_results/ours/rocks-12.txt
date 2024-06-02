@@ -1,0 +1,6 @@
+time: 1.9309749603271484, root_diff: 0.25, V_lower: 0.5, V_upper: 0.75, Belief Size: 259, Controller Size: 5
+time: 2.5135791301727295, root_diff: 0.25, V_lower: 0.5, V_upper: 0.75, Belief Size: 650, Controller Size: 37
+time: 2.7536511421203613, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+time: 2.753732919692993, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+time: 2.756945848464966, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+Total time: 2.7569580078125, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50

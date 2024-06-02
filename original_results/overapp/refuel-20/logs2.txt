@@ -1,0 +1,67 @@
+Storm-pomdp 1.8.1
+Command line arguments: --prism sketch.templ --prop sketch.props --belief-exploration discretize --size-threshold 100000 --resolution 3 -tm --signal-timeout 60 --sound --lpsolver gurobi '--gurobi:inttol' 1e-9 '--topological:minmax' svi
+Current working directory: /opt/storm/build/bin/output/refuel-20
+
+Time for model input parsing: 0.002s.
+Time for model construction: 0.096s.
+
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	6834
+Transitions: 	47915
+Choices: 	24763
+Observations: 	174
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * notbad -> 6383 item(s)
+   * goal -> 12 item(s)
+Choice Labels: 	6 labels
+   * placement -> 1 item(s)
+   * south -> 6077 item(s)
+   * refuel -> 54 item(s)
+   * east -> 6077 item(s)
+   * north -> 6046 item(s)
+   * west -> 6046 item(s)
+-------------------------------------------------------------- 
+Analyzing property 'Pmax=? ["notbad" U "goal"]'
+Exploring the belief MDP... 
+##### POMDP Approximation Statistics ######
+# Input model: 
+-------------------------------------------------------------- 
+Model type: 	POMDP (sparse)
+States: 	6834
+Transitions: 	47915
+Choices: 	24763
+Observations: 	174
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * notbad -> 6383 item(s)
+   * goal -> 12 item(s)
+Choice Labels: 	6 labels
+   * placement -> 1 item(s)
+   * south -> 6077 item(s)
+   * refuel -> 54 item(s)
+   * east -> 6077 item(s)
+   * north -> 6046 item(s)
+   * west -> 6046 item(s)
+-------------------------------------------------------------- 
+# Max. Number of states with same observation: 358
+# Total check time: 14.299s
+# Number of refinement steps: 0
+# Number of states in the grid MDP for the over-approximation: 177951
+# Maximal resolution for over-approximation: 3
+# Time spend for building the over-approx grid MDP(s): 3.886s
+# Time spend for checking the over-approx grid MDP(s): 9.409s
+##########################################
+
+Result: ≤ 0.9999983065
+Time for POMDP analysis: 14.300s.
+
+Performance statistics:
+  * peak memory usage: 515MB
+  * CPU time: 14.051s
+  * wallclock time: 14.409s

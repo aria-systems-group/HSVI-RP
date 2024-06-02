@@ -1,0 +1,131 @@
+2024-02-10 02:59:35,174 - cli.py - This is Paynt version 0.1.0.
+2024-02-10 02:59:35,174 - sketch.py - loading sketch from /synthesis/paynt/experiments/../models/models/grid-20-5obs-05/sketch.templ ...
+2024-02-10 02:59:35,179 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2024-02-10 02:59:35,179 - prism_parser.py - loading properties from /synthesis/paynt/experiments/../models/models/grid-20-5obs-05/sketch.props ...
+2024-02-10 02:59:35,180 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? [(!"bad") U "goal"] 
+2024-02-10 02:59:35,203 - sketch.py - constructed explicit quotient having 401 states and 1580 actions
+2024-02-10 02:59:35,203 - property.py - converting until formula to eventually...
+2024-02-10 02:59:35,204 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2024-02-10 02:59:35,204 - quotient_pomdp.py - Constructed POMDP having 4 observations.
+2024-02-10 02:59:35,210 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1] ...
+2024-02-10 02:59:35,211 - quotient_pomdp.py - Constructed quotient MDP having 401 states and 1580 actions.
+2024-02-10 02:59:35,299 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2024-02-10 02:59:35,299 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1] ...
+2024-02-10 02:59:35,300 - quotient_pomdp.py - Constructed quotient MDP having 401 states and 1580 actions.
+2024-02-10 02:59:35,409 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.0 | Time elapsed = 0.0s | FSC size = 8
+FSC = A([o=1],0)={'south'}
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 0.0 s
+number of holes: 1, family size: 4, super quotient: 401 states / 1580 actions
+explored: 100 %
+AR stats: avg MDP size: 125, iterations: 5
+
+optimal: 0.0
+--------------------
+
+2024-02-10 02:59:35,415 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2024-02-10 02:59:35,415 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 1, 1] ...
+2024-02-10 02:59:35,416 - quotient_pomdp.py - Constructed quotient MDP having 800 states and 6315 actions.
+2024-02-10 02:59:37,248 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.0142676276589219 | Time elapsed = 2.0s | FSC size = 12
+FSC = A([o=1],0)={'north'}, A([o=1],1)={'east'}, M([o=1],0)=1, M([o=1],1)=0, M([o=3],0)=0, M([o=3],1)=0, M([],0)=1
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 0.31 s
+number of holes: 7, family size: 512, super quotient: 800 states / 6315 actions
+explored: 100 %
+AR stats: avg MDP size: 371, iterations: 31
+
+optimal: 0.014268
+--------------------
+
+2024-02-10 02:59:37,585 - synthesizer_pomdp.py - Synthesizing optimal k=3 controller ...
+2024-02-10 02:59:37,586 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 1, 1] ...
+2024-02-10 02:59:37,587 - quotient_pomdp.py - Constructed quotient MDP having 1199 states and 14206 actions.
+2024-02-10 02:59:46,763 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.01764470594737316 | Time elapsed = 11.6s | FSC size = 16
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, M([o=1],0)=2, M([o=1],1)=2, M([o=1],2)=1, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([],0)=0
+
+-----------PAYNT-----------               
+Value = 0.4372589308743757 | Time elapsed = 11.7s | FSC size = 16
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, M([o=1],0)=2, M([o=1],1)=0, M([o=1],2)=1, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([],0)=0
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 7.02 s
+number of holes: 10, family size: 139968, super quotient: 1199 states / 14206 actions
+explored: 100 %
+AR stats: avg MDP size: 678, iterations: 383
+
+optimal: 0.437259
+--------------------
+
+2024-02-10 02:59:53,843 - synthesizer_pomdp.py - Synthesizing optimal k=4 controller ...
+2024-02-10 02:59:53,844 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [4, 4, 1, 1] ...
+2024-02-10 02:59:53,847 - quotient_pomdp.py - Constructed quotient MDP having 1598 states and 25253 actions.
+2024-02-10 03:00:23,133 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.4522104439661629 | Time elapsed = 55.9s | FSC size = 20
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, M([o=1],0)=2, M([o=1],1)=0, M([o=1],2)=1, M([o=1],3)=2, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([o=3],3)=0, M([],0)=3
+
+-----------PAYNT-----------               
+Value = 0.48416283400578897 | Time elapsed = 56.1s | FSC size = 20
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, M([o=1],0)=1, M([o=1],1)=3, M([o=1],2)=0, M([o=1],3)=2, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([o=3],3)=0, M([],0)=3
+
+-----------PAYNT-----------               
+Value = 0.4981294794634275 | Time elapsed = 57.2s | FSC size = 20
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, M([o=1],0)=3, M([o=1],1)=0, M([o=1],2)=1, M([o=1],3)=2, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([o=3],3)=0, M([],0)=0
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 463.05 s
+number of holes: 13, family size: 67108864, super quotient: 1598 states / 25253 actions
+explored: 100 %
+AR stats: avg MDP size: 794, iterations: 14964
+
+optimal: 0.498129
+--------------------
+
+2024-02-10 03:08:06,272 - synthesizer_pomdp.py - Synthesizing optimal k=5 controller ...
+2024-02-10 03:08:06,273 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [5, 5, 1, 1] ...
+2024-02-10 03:08:06,277 - quotient_pomdp.py - Constructed quotient MDP having 1997 states and 39456 actions.
+2024-02-10 03:09:19,417 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.501041579674352 | Time elapsed = 1128.8s | FSC size = 24
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, A([o=1],4)={'east'}, M([o=1],0)=4, M([o=1],1)=2, M([o=1],2)=0, M([o=1],3)=2, M([o=1],4)=1, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([o=3],3)=0, M([o=3],4)=0, M([],0)=3
+
+-----------PAYNT-----------               
+Value = 0.5048737187483665 | Time elapsed = 1130.4s | FSC size = 24
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, A([o=1],4)={'east'}, M([o=1],0)=4, M([o=1],1)=3, M([o=1],2)=0, M([o=1],3)=2, M([o=1],4)=1, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([o=3],3)=0, M([o=3],4)=0, M([],0)=3
+
+-----------PAYNT-----------               
+Value = 0.5088034916673906 | Time elapsed = 1139.9s | FSC size = 24
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, A([o=1],4)={'south'}, M([o=1],0)=3, M([o=1],1)=0, M([o=1],2)=4, M([o=1],3)=2, M([o=1],4)=1, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([o=3],3)=0, M([o=3],4)=0, M([],0)=0
+
+-----------PAYNT-----------               
+Value = 0.521662816372483 | Time elapsed = 1140.4s | FSC size = 24
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, A([o=1],3)={'east'}, A([o=1],4)={'east'}, M([o=1],0)=3, M([o=1],1)=0, M([o=1],2)=4, M([o=1],3)=2, M([o=1],4)=1, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([o=3],3)=0, M([o=3],4)=0, M([],0)=0
+
+-----------PAYNT-----------               
+Value = 0.5242157059818032 | Time elapsed = 1156.5s | FSC size = 24
+FSC = A([o=1],0)={'south'}, A([o=1],1)={'north'}, A([o=1],2)={'east'}, A([o=1],3)={'south'}, A([o=1],4)={'east'}, M([o=1],0)=3, M([o=1],1)=0, M([o=1],2)=4, M([o=1],3)=2, M([o=1],4)=1, M([o=3],0)=0, M([o=3],1)=0, M([o=3],2)=0, M([o=3],3)=0, M([o=3],4)=0, M([],0)=0
+

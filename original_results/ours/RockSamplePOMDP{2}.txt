@@ -1,0 +1,30 @@
+time: 0.004379987716674805, root_diff: 0.0, V_lower: 0.75, V_upper: 0.75, Belief Size: 109, Controller Size: 14
+time: 0.00440216064453125, root_diff: 0.0, V_lower: 0.75, V_upper: 0.75, Belief Size: 109, Controller Size: 14
+time: 0.004483938217163086, root_diff: 0.0, V_lower: 0.75, V_upper: 0.75, Belief Size: 109, Controller Size: 14
+Total time: 0.004486083984375, root_diff: 0.0, V_lower: 0.75, V_upper: 0.75, Belief Size: 109, Controller Size: 14
+time: 0.3938131332397461, root_diff: 0.75, V_lower: 0.0, V_upper: 0.75, Belief Size: 395, Controller Size: 219
+time: 1.1779251098632812, root_diff: 0.25, V_lower: 0.5, V_upper: 0.75, Belief Size: 655, Controller Size: 3
+time: 2.362337112426758, root_diff: 0.2500000000000001, V_lower: 0.5, V_upper: 0.7500000000000001, Belief Size: 1086, Controller Size: 4
+time: 4.3354811668396, root_diff: 0.016741752115798425, V_lower: 0.7332582478842018, V_upper: 0.7500000000000002, Belief Size: 1582, Controller Size: 7
+time: 5.118722200393677, root_diff: 0.008515917768788572, V_lower: 0.7414840822312114, V_upper: 0.75, Belief Size: 1866, Controller Size: 95
+time: 5.1187779903411865, root_diff: 0.008515917768788572, V_lower: 0.7414840822312114, V_upper: 0.75, Belief Size: 1866, Controller Size: 95
+time: 5.164391994476318, root_diff: 0.008515917768788794, V_lower: 0.7414840822312114, V_upper: 0.7500000000000002, Belief Size: 1866, Controller Size: 95
+Total time: 5.164399862289429, root_diff: 0.008515917768788794, V_lower: 0.7414840822312114, V_upper: 0.7500000000000002, Belief Size: 1866, Controller Size: 95
+time: 0.22860503196716309, root_diff: 0.25, V_lower: 0.5, V_upper: 0.75, Belief Size: 259, Controller Size: 5
+time: 0.7974541187286377, root_diff: 0.25, V_lower: 0.5, V_upper: 0.75, Belief Size: 650, Controller Size: 37
+time: 1.0302760601043701, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+time: 1.0303170680999756, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+time: 1.033196210861206, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+Total time: 1.0332012176513672, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+Total time: 0.0, root_diff: 0.0, V_lower: 0.0, V_upper: 0.0, Belief Size: 8, Controller Size: 7
+Total time: 1.1920928955078125e-6, root_diff: 0.0, V_lower: 0.0, V_upper: 0.0, Belief Size: 8, Controller Size: 7
+time: 0.18140482902526855, root_diff: 0.25, V_lower: 0.5, V_upper: 0.75, Belief Size: 259, Controller Size: 5
+time: 0.7487618923187256, root_diff: 0.25, V_lower: 0.5, V_upper: 0.75, Belief Size: 650, Controller Size: 37
+time: 0.9815728664398193, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+time: 0.9816069602966309, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+time: 0.9841189384460449, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+Total time: 0.984123945236206, root_diff: 2.220446049250313e-16, V_lower: 0.75, V_upper: 0.7500000000000002, Belief Size: 770, Controller Size: 50
+time: 0.004271984100341797, root_diff: 0.0, V_lower: 0.75, V_upper: 0.75, Belief Size: 109, Controller Size: 14
+time: 0.004292964935302734, root_diff: 0.0, V_lower: 0.75, V_upper: 0.75, Belief Size: 109, Controller Size: 14
+time: 0.004354238510131836, root_diff: 0.0, V_lower: 0.75, V_upper: 0.75, Belief Size: 109, Controller Size: 14
+Total time: 0.004358053207397461, root_diff: 0.0, V_lower: 0.75, V_upper: 0.75, Belief Size: 109, Controller Size: 14
