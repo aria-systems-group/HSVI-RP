@@ -3,8 +3,6 @@ module HSVIRP
 # package code goes here
 using POMDPs
 using POMDPTools
-using POMDPModelTools
-using POMDPPolicies
 using LightGraphs
 using Parameters
 using Random

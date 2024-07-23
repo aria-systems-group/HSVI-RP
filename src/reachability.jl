@@ -48,7 +48,7 @@ function POMDPs.value(policy::ReachabilityPolicy, s)
         return value(policy.policy, s)
     end
 end
-function POMDPPolicies.actionvalues(policy::ReachabilityPolicy, s)
+function POMDPTools.actionvalues(policy::ReachabilityPolicy, s)
     if s ∈ policy.reach 
         return ones(length(actions(policy.problem)))
     else
