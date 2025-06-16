@@ -7,11 +7,9 @@ using LinearAlgebra
 using Random
 using POMDPs
 using POMDPModels
-using POMDPModelTools
 using Compose
 using ColorSchemes
 using Parameters
-using BeliefUpdaters
 include("../prism_parser.jl")
 
 

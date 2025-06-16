@@ -1,3 +1,5 @@
+using POMDPTools
+
 function parse_prism_file(filename)
 
     actionpattern = r"\[.*\]"

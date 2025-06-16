@@ -1,0 +1,1029 @@
+// Exported by storm
+// Original model type: POMDP
+@type: POMDP
+@parameters
+
+@reward_models
+
+@nr_states
+128
+@nr_choices
+254
+@model
+state 0 {2} init
+//[x=0]
+	action in
+		1 : 0.5
+		2 : 0.5
+state 1 {0}
+//[x=115]
+	action l
+		1 : 0.5
+		3 : 0.5
+	action r
+		1 : 0.5
+		2 : 0.5
+state 2 {0}
+//[x=116]
+	action l
+		1 : 0.5
+		2 : 0.5
+	action r
+		2 : 0.5
+		4 : 0.5
+state 3 {0}
+//[x=114]
+	action l
+		3 : 0.5
+		5 : 0.5
+	action r
+		1 : 0.5
+		3 : 0.5
+state 4 {0}
+//[x=117]
+	action l
+		2 : 0.5
+		4 : 0.5
+	action r
+		4 : 0.5
+		6 : 0.5
+state 5 {0}
+//[x=113]
+	action l
+		5 : 0.5
+		7 : 0.5
+	action r
+		3 : 0.5
+		5 : 0.5
+state 6 {0}
+//[x=118]
+	action l
+		4 : 0.5
+		6 : 0.5
+	action r
+		6 : 0.5
+		8 : 0.5
+state 7 {0}
+//[x=112]
+	action l
+		7 : 0.5
+		9 : 0.5
+	action r
+		5 : 0.5
+		7 : 0.5
+state 8 {0}
+//[x=119]
+	action l
+		6 : 0.5
+		8 : 0.5
+	action r
+		8 : 0.5
+		10 : 0.5
+state 9 {0}
+//[x=111]
+	action l
+		9 : 0.5
+		11 : 0.5
+	action r
+		7 : 0.5
+		9 : 0.5
+state 10 {0}
+//[x=120]
+	action l
+		8 : 0.5
+		10 : 0.5
+	action r
+		10 : 0.5
+		12 : 0.5
+state 11 {0}
+//[x=110]
+	action l
+		11 : 0.5
+		13 : 0.5
+	action r
+		9 : 0.5
+		11 : 0.5
+state 12 {0}
+//[x=121]
+	action l
+		10 : 0.5
+		12 : 0.5
+	action r
+		12 : 0.5
+		14 : 0.5
+state 13 {0}
+//[x=109]
+	action l
+		13 : 0.5
+		15 : 0.5
+	action r
+		11 : 0.5
+		13 : 0.5
+state 14 {0}
+//[x=122]
+	action l
+		12 : 0.5
+		14 : 0.5
+	action r
+		14 : 0.5
+		16 : 0.5
+state 15 {0}
+//[x=108]
+	action l
+		15 : 0.5
+		17 : 0.5
+	action r
+		13 : 0.5
+		15 : 0.5
+state 16 {0}
+//[x=123]
+	action l
+		14 : 0.5
+		16 : 0.5
+	action r
+		16 : 0.5
+		18 : 0.5
+state 17 {0}
+//[x=107]
+	action l
+		17 : 0.5
+		19 : 0.5
+	action r
+		15 : 0.5
+		17 : 0.5
+state 18 {0}
+//[x=124]
+	action l
+		16 : 0.5
+		18 : 0.5
+	action r
+		18 : 0.5
+		20 : 0.5
+state 19 {0}
+//[x=106]
+	action l
+		19 : 0.5
+		21 : 0.5
+	action r
+		17 : 0.5
+		19 : 0.5
+state 20 {0}
+//[x=125]
+	action l
+		18 : 0.5
+		20 : 0.5
+	action r
+		20 : 0.5
+		22 : 0.5
+state 21 {0}
+//[x=105]
+	action l
+		21 : 0.5
+		23 : 0.5
+	action r
+		19 : 0.5
+		21 : 0.5
+state 22 {0}
+//[x=126]
+	action l
+		20 : 0.5
+		22 : 0.5
+	action r
+		22 : 0.5
+		24 : 0.5
+state 23 {0}
+//[x=104]
+	action l
+		23 : 0.5
+		25 : 0.5
+	action r
+		21 : 0.5
+		23 : 0.5
+state 24 {0}
+//[x=127]
+	action l
+		22 : 0.5
+		24 : 0.5
+	action r
+		0 : 0.5
+		24 : 0.5
+state 25 {0}
+//[x=103]
+	action l
+		25 : 0.5
+		26 : 0.5
+	action r
+		23 : 0.5
+		25 : 0.5
+state 26 {0}
+//[x=102]
+	action l
+		26 : 0.5
+		27 : 0.5
+	action r
+		25 : 0.5
+		26 : 0.5
+state 27 {0}
+//[x=101]
+	action l
+		27 : 0.5
+		28 : 0.5
+	action r
+		26 : 0.5
+		27 : 0.5
+state 28 {0}
+//[x=100]
+	action l
+		28 : 0.5
+		29 : 0.5
+	action r
+		27 : 0.5
+		28 : 0.5
+state 29 {1}
+//[x=99]
+	action l
+		29 : 0.5
+		30 : 0.5
+	action r
+		28 : 0.5
+		29 : 0.5
+state 30 {1}
+//[x=98]
+	action l
+		30 : 0.5
+		31 : 0.5
+	action r
+		29 : 0.5
+		30 : 0.5
+state 31 {1}
+//[x=97]
+	action l
+		31 : 0.5
+		32 : 0.5
+	action r
+		30 : 0.5
+		31 : 0.5
+state 32 {1}
+//[x=96]
+	action l
+		32 : 0.5
+		33 : 0.5
+	action r
+		31 : 0.5
+		32 : 0.5
+state 33 {1}
+//[x=95]
+	action l
+		33 : 0.5
+		34 : 0.5
+	action r
+		32 : 0.5
+		33 : 0.5
+state 34 {1}
+//[x=94]
+	action l
+		34 : 0.5
+		35 : 0.5
+	action r
+		33 : 0.5
+		34 : 0.5
+state 35 {1}
+//[x=93]
+	action l
+		35 : 0.5
+		36 : 0.5
+	action r
+		34 : 0.5
+		35 : 0.5
+state 36 {1}
+//[x=92]
+	action l
+		36 : 0.5
+		37 : 0.5
+	action r
+		35 : 0.5
+		36 : 0.5
+state 37 {1}
+//[x=91]
+	action l
+		37 : 0.5
+		38 : 0.5
+	action r
+		36 : 0.5
+		37 : 0.5
+state 38 {1}
+//[x=90]
+	action l
+		38 : 0.5
+		39 : 0.5
+	action r
+		37 : 0.5
+		38 : 0.5
+state 39 {1}
+//[x=89]
+	action l
+		39 : 0.5
+		40 : 0.5
+	action r
+		38 : 0.5
+		39 : 0.5
+state 40 {1}
+//[x=88]
+	action l
+		40 : 0.5
+		41 : 0.5
+	action r
+		39 : 0.5
+		40 : 0.5
+state 41 {1}
+//[x=87]
+	action l
+		41 : 0.5
+		42 : 0.5
+	action r
+		40 : 0.5
+		41 : 0.5
+state 42 {1}
+//[x=86]
+	action l
+		42 : 0.5
+		43 : 0.5
+	action r
+		41 : 0.5
+		42 : 0.5
+state 43 {1}
+//[x=85]
+	action l
+		43 : 0.5
+		44 : 0.5
+	action r
+		42 : 0.5
+		43 : 0.5
+state 44 {1}
+//[x=84]
+	action l
+		44 : 0.5
+		45 : 0.5
+	action r
+		43 : 0.5
+		44 : 0.5
+state 45 {1}
+//[x=83]
+	action l
+		45 : 0.5
+		46 : 0.5
+	action r
+		44 : 0.5
+		45 : 0.5
+state 46 {1}
+//[x=82]
+	action l
+		46 : 0.5
+		47 : 0.5
+	action r
+		45 : 0.5
+		46 : 0.5
+state 47 {1}
+//[x=81]
+	action l
+		47 : 0.5
+		48 : 0.5
+	action r
+		46 : 0.5
+		47 : 0.5
+state 48 {1}
+//[x=80]
+	action l
+		48 : 0.5
+		49 : 0.5
+	action r
+		47 : 0.5
+		48 : 0.5
+state 49 {1}
+//[x=79]
+	action l
+		49 : 0.5
+		50 : 0.5
+	action r
+		48 : 0.5
+		49 : 0.5
+state 50 {1}
+//[x=78]
+	action l
+		50 : 0.5
+		51 : 0.5
+	action r
+		49 : 0.5
+		50 : 0.5
+state 51 {1}
+//[x=77]
+	action l
+		51 : 0.5
+		52 : 0.5
+	action r
+		50 : 0.5
+		51 : 0.5
+state 52 {1}
+//[x=76]
+	action l
+		52 : 0.5
+		53 : 0.5
+	action r
+		51 : 0.5
+		52 : 0.5
+state 53 {1}
+//[x=75]
+	action l
+		53 : 0.5
+		54 : 0.5
+	action r
+		52 : 0.5
+		53 : 0.5
+state 54 {1}
+//[x=74]
+	action l
+		54 : 0.5
+		55 : 0.5
+	action r
+		53 : 0.5
+		54 : 0.5
+state 55 {1}
+//[x=73]
+	action l
+		55 : 0.5
+		56 : 0.5
+	action r
+		54 : 0.5
+		55 : 0.5
+state 56 {1}
+//[x=72]
+	action l
+		56 : 0.5
+		57 : 0.5
+	action r
+		55 : 0.5
+		56 : 0.5
+state 57 {1}
+//[x=71]
+	action l
+		57 : 0.5
+		58 : 0.5
+	action r
+		56 : 0.5
+		57 : 0.5
+state 58 {1}
+//[x=70]
+	action l
+		58 : 0.5
+		59 : 0.5
+	action r
+		57 : 0.5
+		58 : 0.5
+state 59 {1}
+//[x=69]
+	action l
+		59 : 0.5
+		60 : 0.5
+	action r
+		58 : 0.5
+		59 : 0.5
+state 60 {1}
+//[x=68]
+	action l
+		60 : 0.5
+		61 : 0.5
+	action r
+		59 : 0.5
+		60 : 0.5
+state 61 {1}
+//[x=67]
+	action l
+		61 : 0.5
+		62 : 0.5
+	action r
+		60 : 0.5
+		61 : 0.5
+state 62 {1}
+//[x=66]
+	action l
+		62 : 0.5
+		63 : 0.5
+	action r
+		61 : 0.5
+		62 : 0.5
+state 63 {1}
+//[x=65]
+	action l
+		63 : 0.5
+		64 : 0.5
+	action r
+		62 : 0.5
+		63 : 0.5
+state 64 {1}
+//[x=64]
+	action l
+		64 : 0.5
+		65 : 0.5
+	action r
+		63 : 0.5
+		64 : 0.5
+state 65 {1}
+//[x=63]
+	action l
+		65 : 0.5
+		66 : 0.5
+	action r
+		64 : 0.5
+		65 : 0.5
+state 66 {1}
+//[x=62]
+	action l
+		66 : 0.5
+		67 : 0.5
+	action r
+		65 : 0.5
+		66 : 0.5
+state 67 {1}
+//[x=61]
+	action l
+		67 : 0.5
+		68 : 0.5
+	action r
+		66 : 0.5
+		67 : 0.5
+state 68 {1}
+//[x=60]
+	action l
+		68 : 0.5
+		69 : 0.5
+	action r
+		67 : 0.5
+		68 : 0.5
+state 69 {1}
+//[x=59]
+	action l
+		69 : 0.5
+		70 : 0.5
+	action r
+		68 : 0.5
+		69 : 0.5
+state 70 {1}
+//[x=58]
+	action l
+		70 : 0.5
+		71 : 0.5
+	action r
+		69 : 0.5
+		70 : 0.5
+state 71 {1}
+//[x=57]
+	action l
+		71 : 0.5
+		72 : 0.5
+	action r
+		70 : 0.5
+		71 : 0.5
+state 72 {1}
+//[x=56]
+	action l
+		72 : 0.5
+		73 : 0.5
+	action r
+		71 : 0.5
+		72 : 0.5
+state 73 {1}
+//[x=55]
+	action l
+		73 : 0.5
+		74 : 0.5
+	action r
+		72 : 0.5
+		73 : 0.5
+state 74 {1}
+//[x=54]
+	action l
+		74 : 0.5
+		75 : 0.5
+	action r
+		73 : 0.5
+		74 : 0.5
+state 75 {1}
+//[x=53]
+	action l
+		75 : 0.5
+		76 : 0.5
+	action r
+		74 : 0.5
+		75 : 0.5
+state 76 {1}
+//[x=52]
+	action l
+		76 : 0.5
+		77 : 0.5
+	action r
+		75 : 0.5
+		76 : 0.5
+state 77 {1}
+//[x=51]
+	action l
+		77 : 0.5
+		78 : 0.5
+	action r
+		76 : 0.5
+		77 : 0.5
+state 78 {1}
+//[x=50]
+	action l
+		78 : 0.5
+		79 : 0.5
+	action r
+		77 : 0.5
+		78 : 0.5
+state 79 {1}
+//[x=49]
+	action l
+		79 : 0.5
+		80 : 0.5
+	action r
+		78 : 0.5
+		79 : 0.5
+state 80 {1}
+//[x=48]
+	action l
+		80 : 0.5
+		81 : 0.5
+	action r
+		79 : 0.5
+		80 : 0.5
+state 81 {1}
+//[x=47]
+	action l
+		81 : 0.5
+		82 : 0.5
+	action r
+		80 : 0.5
+		81 : 0.5
+state 82 {1}
+//[x=46]
+	action l
+		82 : 0.5
+		83 : 0.5
+	action r
+		81 : 0.5
+		82 : 0.5
+state 83 {1}
+//[x=45]
+	action l
+		83 : 0.5
+		84 : 0.5
+	action r
+		82 : 0.5
+		83 : 0.5
+state 84 {1}
+//[x=44]
+	action l
+		84 : 0.5
+		85 : 0.5
+	action r
+		83 : 0.5
+		84 : 0.5
+state 85 {1}
+//[x=43]
+	action l
+		85 : 0.5
+		86 : 0.5
+	action r
+		84 : 0.5
+		85 : 0.5
+state 86 {1}
+//[x=42]
+	action l
+		86 : 0.5
+		87 : 0.5
+	action r
+		85 : 0.5
+		86 : 0.5
+state 87 {1}
+//[x=41]
+	action l
+		87 : 0.5
+		88 : 0.5
+	action r
+		86 : 0.5
+		87 : 0.5
+state 88 {1}
+//[x=40]
+	action l
+		88 : 0.5
+		89 : 0.5
+	action r
+		87 : 0.5
+		88 : 0.5
+state 89 {1}
+//[x=39]
+	action l
+		89 : 0.5
+		90 : 0.5
+	action r
+		88 : 0.5
+		89 : 0.5
+state 90 {1}
+//[x=38]
+	action l
+		90 : 0.5
+		91 : 0.5
+	action r
+		89 : 0.5
+		90 : 0.5
+state 91 {1}
+//[x=37]
+	action l
+		91 : 0.5
+		92 : 0.5
+	action r
+		90 : 0.5
+		91 : 0.5
+state 92 {1}
+//[x=36]
+	action l
+		92 : 0.5
+		93 : 0.5
+	action r
+		91 : 0.5
+		92 : 0.5
+state 93 {1}
+//[x=35]
+	action l
+		93 : 0.5
+		94 : 0.5
+	action r
+		92 : 0.5
+		93 : 0.5
+state 94 {1}
+//[x=34]
+	action l
+		94 : 0.5
+		95 : 0.5
+	action r
+		93 : 0.5
+		94 : 0.5
+state 95 {1}
+//[x=33]
+	action l
+		95 : 0.5
+		96 : 0.5
+	action r
+		94 : 0.5
+		95 : 0.5
+state 96 {1}
+//[x=32]
+	action l
+		96 : 0.5
+		97 : 0.5
+	action r
+		95 : 0.5
+		96 : 0.5
+state 97 {1}
+//[x=31]
+	action l
+		97 : 0.5
+		98 : 0.5
+	action r
+		96 : 0.5
+		97 : 0.5
+state 98 {1}
+//[x=30]
+	action l
+		98 : 0.5
+		99 : 0.5
+	action r
+		97 : 0.5
+		98 : 0.5
+state 99 {1}
+//[x=29]
+	action l
+		99 : 0.5
+		100 : 0.5
+	action r
+		98 : 0.5
+		99 : 0.5
+state 100 {1}
+//[x=28]
+	action l
+		100 : 0.5
+		101 : 0.5
+	action r
+		99 : 0.5
+		100 : 0.5
+state 101 {1}
+//[x=27]
+	action l
+		101 : 0.5
+		102 : 0.5
+	action r
+		100 : 0.5
+		101 : 0.5
+state 102 {1}
+//[x=26]
+	action l
+		102 : 0.5
+		103 : 0.5
+	action r
+		101 : 0.5
+		102 : 0.5
+state 103 {1}
+//[x=25]
+	action l
+		103 : 0.5
+		104 : 0.5
+	action r
+		102 : 0.5
+		103 : 0.5
+state 104 {1}
+//[x=24]
+	action l
+		104 : 0.5
+		105 : 0.5
+	action r
+		103 : 0.5
+		104 : 0.5
+state 105 {1}
+//[x=23]
+	action l
+		105 : 0.5
+		106 : 0.5
+	action r
+		104 : 0.5
+		105 : 0.5
+state 106 {1}
+//[x=22]
+	action l
+		106 : 0.5
+		107 : 0.5
+	action r
+		105 : 0.5
+		106 : 0.5
+state 107 {1}
+//[x=21]
+	action l
+		107 : 0.5
+		108 : 0.5
+	action r
+		106 : 0.5
+		107 : 0.5
+state 108 {1}
+//[x=20]
+	action l
+		108 : 0.5
+		109 : 0.5
+	action r
+		107 : 0.5
+		108 : 0.5
+state 109 {1}
+//[x=19]
+	action l
+		109 : 0.5
+		110 : 0.5
+	action r
+		108 : 0.5
+		109 : 0.5
+state 110 {1}
+//[x=18]
+	action l
+		110 : 0.5
+		111 : 0.5
+	action r
+		109 : 0.5
+		110 : 0.5
+state 111 {1}
+//[x=17]
+	action l
+		111 : 0.5
+		112 : 0.5
+	action r
+		110 : 0.5
+		111 : 0.5
+state 112 {1}
+//[x=16]
+	action l
+		112 : 0.5
+		113 : 0.5
+	action r
+		111 : 0.5
+		112 : 0.5
+state 113 {1}
+//[x=15]
+	action l
+		113 : 0.5
+		114 : 0.5
+	action r
+		112 : 0.5
+		113 : 0.5
+state 114 {1}
+//[x=14]
+	action l
+		114 : 0.5
+		115 : 0.5
+	action r
+		113 : 0.5
+		114 : 0.5
+state 115 {1}
+//[x=13]
+	action l
+		115 : 0.5
+		116 : 0.5
+	action r
+		114 : 0.5
+		115 : 0.5
+state 116 {1}
+//[x=12]
+	action l
+		116 : 0.5
+		117 : 0.5
+	action r
+		115 : 0.5
+		116 : 0.5
+state 117 {1}
+//[x=11]
+	action l
+		117 : 0.5
+		118 : 0.5
+	action r
+		116 : 0.5
+		117 : 0.5
+state 118 {1}
+//[x=10]
+	action l
+		118 : 0.5
+		119 : 0.5
+	action r
+		117 : 0.5
+		118 : 0.5
+state 119 {1}
+//[x=9]
+	action l
+		119 : 0.5
+		120 : 0.5
+	action r
+		118 : 0.5
+		119 : 0.5
+state 120 {1}
+//[x=8]
+	action l
+		120 : 0.5
+		121 : 0.5
+	action r
+		119 : 0.5
+		120 : 0.5
+state 121 {1}
+//[x=7]
+	action l
+		121 : 0.5
+		122 : 0.5
+	action r
+		120 : 0.5
+		121 : 0.5
+state 122 {1}
+//[x=6]
+	action l
+		122 : 0.5
+		123 : 0.5
+	action r
+		121 : 0.5
+		122 : 0.5
+state 123 {1}
+//[x=5]
+	action l
+		123 : 0.5
+		124 : 0.5
+	action r
+		122 : 0.5
+		123 : 0.5
+state 124 {1}
+//[x=4]
+	action l
+		124 : 0.5
+		125 : 0.5
+	action r
+		123 : 0.5
+		124 : 0.5
+state 125 {1}
+//[x=3]
+	action l
+		125 : 0.5
+		126 : 0.5
+	action r
+		124 : 0.5
+		125 : 0.5
+state 126 {1}
+//[x=2]
+	action l
+		126 : 0.5
+		127 : 0.5
+	action r
+		125 : 0.5
+		126 : 0.5
+state 127 {3} deadlock
+//[x=1]
+	action __no_label__
+		127 : 1

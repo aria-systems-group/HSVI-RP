@@ -1,0 +1,258 @@
+// Exported by storm
+// Original model type: POMDP
+@type: POMDP
+@parameters
+
+@reward_models
+
+@nr_states
+33
+@nr_choices
+69
+@model
+state 0 {2} init
+//[x=1	& y=1	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action in
+		1 : 0.5
+		2 : 0.5
+state 1 {1}
+//[x=1	& y=1	& pos11=1	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action l
+		1 : 0.5
+		3 : 0.5
+	action r
+		1 : 0.5
+		2 : 0.5
+state 2 {1}
+//[x=1	& y=1	& pos11=2	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action l
+		1 : 0.5
+		2 : 0.5
+	action r
+		2 : 0.5
+		3 : 0.5
+state 3 {1}
+//[x=1	& y=1	& pos11=4	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action l
+		0 : 0.01
+		4 : 0.99
+	action r
+		0 : 0.01
+		4 : 0.99
+state 4 {0}
+//[x=1	& y=1	& pos11=3	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action up
+		0 : 1
+	action right
+		5 : 1
+	action down
+		0 : 1
+	action left
+		0 : 1
+state 5 {2}
+//[x=2	& y=1	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action in
+		6 : 0.5
+		7 : 0.5
+state 6 {1}
+//[x=2	& y=1	& pos11=0	& pos21=1	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action l
+		6 : 0.5
+		8 : 0.5
+	action r
+		6 : 0.5
+		7 : 0.5
+state 7 {1}
+//[x=2	& y=1	& pos11=0	& pos21=2	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action l
+		6 : 0.5
+		7 : 0.5
+	action r
+		7 : 0.5
+		8 : 0.5
+state 8 {1}
+//[x=2	& y=1	& pos11=0	& pos21=4	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action l
+		5 : 0.01
+		9 : 0.99
+	action r
+		5 : 0.01
+		9 : 0.99
+state 9 {0}
+//[x=2	& y=1	& pos11=0	& pos21=3	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action up
+		5 : 1
+	action right
+		10 : 1
+	action down
+		5 : 1
+	action left
+		0 : 1
+state 10 {2}
+//[x=3	& y=1	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action in
+		11 : 0.5
+		12 : 0.5
+state 11 {1}
+//[x=3	& y=1	& pos11=0	& pos21=0	& pos31=1	& pos32=0	& pos33=0	& pos23=0]
+	action l
+		11 : 0.5
+		13 : 0.5
+	action r
+		11 : 0.5
+		12 : 0.5
+state 12 {1}
+//[x=3	& y=1	& pos11=0	& pos21=0	& pos31=2	& pos32=0	& pos33=0	& pos23=0]
+	action l
+		11 : 0.5
+		12 : 0.5
+	action r
+		12 : 0.5
+		13 : 0.5
+state 13 {1}
+//[x=3	& y=1	& pos11=0	& pos21=0	& pos31=4	& pos32=0	& pos33=0	& pos23=0]
+	action l
+		10 : 0.01
+		14 : 0.99
+	action r
+		10 : 0.01
+		14 : 0.99
+state 14 {0}
+//[x=3	& y=1	& pos11=0	& pos21=0	& pos31=3	& pos32=0	& pos33=0	& pos23=0]
+	action up
+		15 : 1
+	action right
+		10 : 1
+	action down
+		10 : 1
+	action left
+		5 : 1
+state 15 {2}
+//[x=3	& y=2	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action in
+		16 : 0.5
+		17 : 0.5
+state 16 {1}
+//[x=3	& y=2	& pos11=0	& pos21=0	& pos31=0	& pos32=1	& pos33=0	& pos23=0]
+	action l
+		16 : 0.5
+		18 : 0.5
+	action r
+		16 : 0.5
+		17 : 0.5
+state 17 {1}
+//[x=3	& y=2	& pos11=0	& pos21=0	& pos31=0	& pos32=2	& pos33=0	& pos23=0]
+	action l
+		16 : 0.5
+		17 : 0.5
+	action r
+		17 : 0.5
+		18 : 0.5
+state 18 {1}
+//[x=3	& y=2	& pos11=0	& pos21=0	& pos31=0	& pos32=4	& pos33=0	& pos23=0]
+	action l
+		15 : 0.01
+		19 : 0.99
+	action r
+		15 : 0.01
+		19 : 0.99
+state 19 {0}
+//[x=3	& y=2	& pos11=0	& pos21=0	& pos31=0	& pos32=3	& pos33=0	& pos23=0]
+	action up
+		20 : 1
+	action right
+		15 : 1
+	action down
+		10 : 1
+	action left
+		15 : 1
+state 20 {2}
+//[x=3	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action in
+		21 : 0.5
+		22 : 0.5
+state 21 {1}
+//[x=3	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=1	& pos23=0]
+	action l
+		21 : 0.5
+		23 : 0.5
+	action r
+		21 : 0.5
+		22 : 0.5
+state 22 {1}
+//[x=3	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=2	& pos23=0]
+	action l
+		21 : 0.5
+		22 : 0.5
+	action r
+		22 : 0.5
+		24 : 0.5
+state 23 {1}
+//[x=3	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=4	& pos23=0]
+	action l
+		20 : 0.01
+		25 : 0.99
+	action r
+		20 : 0.01
+		25 : 0.99
+state 24 {4}
+//[x=3	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=5	& pos23=0]
+	action fail
+		24 : 1
+state 25 {0}
+//[x=3	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=3	& pos23=0]
+	action up
+		20 : 1
+	action right
+		20 : 1
+	action down
+		15 : 1
+	action left
+		26 : 1
+state 26 {2}
+//[x=2	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action in
+		27 : 0.5
+		28 : 0.5
+state 27 {1}
+//[x=2	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=1]
+	action l
+		27 : 0.5
+		29 : 0.5
+	action r
+		27 : 0.5
+		28 : 0.5
+state 28 {1}
+//[x=2	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=2]
+	action l
+		27 : 0.5
+		28 : 0.5
+	action r
+		28 : 0.5
+		30 : 0.5
+state 29 {4}
+//[x=2	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=5]
+	action fail
+		29 : 1
+state 30 {1}
+//[x=2	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=4]
+	action l
+		26 : 0.01
+		31 : 0.99
+	action r
+		26 : 0.01
+		31 : 0.99
+state 31 {0}
+//[x=2	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=3]
+	action up
+		26 : 1
+	action right
+		20 : 1
+	action down
+		26 : 1
+	action left
+		32 : 1
+state 32 {3} "((x = 1) & (y = 3))" deadlock
+//[x=1	& y=3	& pos11=0	& pos21=0	& pos31=0	& pos32=0	& pos33=0	& pos23=0]
+	action __no_label__
+		32 : 1

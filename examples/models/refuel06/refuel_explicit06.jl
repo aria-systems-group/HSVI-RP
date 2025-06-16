@@ -7,11 +7,10 @@ using LinearAlgebra
 using Random
 using POMDPs
 using POMDPModels
-using POMDPModelTools
+using POMDPTools
 using Compose
 using ColorSchemes
 using Parameters
-using BeliefUpdaters
 
 
 #slippery

@@ -1,0 +1,25 @@
+pomdp
+
+const int SIZE=100;
+
+formula in = x=0;
+formula goal = x=SIZE;
+formula fail = x=1;
+
+observable "in" = in;
+observable "goal" = goal;
+observable "o0" = x>1 & x<100;
+observable "fail" = fail;
+
+module test
+
+    x : [0..100] init 0;
+
+    [in]  in -> .5: (x'=SIZE/2-1) + .5: (x'=SIZE/2);
+
+    [l]   !in & !goal & !fail -> .5: true + .5: (x'=x-1);
+    [r]   !in & !goal & !fail -> .5: true + .5: (x'=x+1);
+
+endmodule
+
+label "goal" = goal;

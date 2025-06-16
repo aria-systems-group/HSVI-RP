@@ -8,11 +8,10 @@ using LinearAlgebra
 using Random
 using POMDPs
 using POMDPModels
-using POMDPModelTools
+using POMDPTools
 using Compose
 using ColorSchemes
 using Parameters
-using BeliefUpdaters
 
 
 const dir = Dict(:up=>GWPos(0,1), :down=>GWPos(0,-1), :left=>GWPos(-1,0), :right=>GWPos(1,0))
