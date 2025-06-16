@@ -15,7 +15,7 @@ end
 
 begin
     # --- Load model directly from the PRISM file ---
-    pomdp = GenericPrismPOMDP("examples/models/new/maze-tasks-reach-fail/explicit.templ")
+    pomdp = GenericPrismPOMDP("examples/models/simple-way100/explicit.templ")
 
     # The LTL property itself
     prop = ltl"notbad U goal"
